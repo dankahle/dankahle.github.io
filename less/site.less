@@ -55,7 +55,6 @@ body {
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: 0px 10px;
   font-size: 16px;
   opacity: 0;
   .trans;
@@ -74,17 +73,19 @@ body {
     li {
       display: inline-block;
       &:not(:last-child) {
-        margin-right: 23px;
+        margin-right: 11px;
         @media (min-width: @screen-sm) {
-          margin-right: 50px;
+          margin-right: 30px;
         }
       }
       a {
         display: inline-block;
-        //padding: 5px 10px;
+        padding: 0px 6px;
+        //.outline;
         line-height: @nav-height-xs;
         @media (min-width: @screen-sm) {
           line-height: @nav-height-sm;
+          padding: 0px 10px;
         }
         text-align: center;
         text-decoration: none;
