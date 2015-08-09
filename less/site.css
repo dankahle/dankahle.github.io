@@ -30,88 +30,58 @@ body {
 .filter.in {
   opacity: .5;
 }
-.phone-header {
+.nav {
   display: block;
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  font-size: 16px;
-  border-bottom: 1px solid #666;
-  transition: .2s;
-}
-.phone-header:hover {
-  background: rgba(0, 0, 255, 0.2);
-  text-decoration: none;
-}
-.phone-nav {
-  position: fixed;
-  top: 30px;
-  left: 0;
-  width: 80%;
-  margin: 10px auto;
-  z-index: 10;
-  font-size: 16px;
-  opacity: 1;
-  -webkit-transition: opacity .5s, left .5s, top .5s;
-  -o-transition: opacity .5s, left .5s, top .5s;
-  transition: opacity .5s, left .5s, top .5s;
-}
-.phone-nav.ng-hide {
-  opacity: 0;
-}
-.phone-nav ul {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-.phone-nav ul li a {
-  display: block;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-}
-.phone-nav ul li a.active {
-  color: orange;
-}
-.sm-md-nav {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  margin-top: 10px;
   z-index: 10;
+  padding: 0px 10px;
   font-size: 16px;
   opacity: 0;
   -webkit-transition: opacity .5s, left .5s, top .5s;
   -o-transition: opacity .5s, left .5s, top .5s;
   transition: opacity .5s, left .5s, top .5s;
 }
-.sm-md-nav.intro {
+.nav.intro {
   -webkit-transition: opacity ease-in-out 3s;
   -o-transition: opacity ease-in-out 3s;
   transition: opacity ease-in-out 3s;
 }
-.sm-md-nav.in {
+.nav.in {
   opacity: 1;
 }
-.sm-md-nav ul {
+.nav ul {
+  margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
+  white-space: nowrap;
 }
-.sm-md-nav ul li {
+.nav ul li {
   display: inline-block;
-  margin-right: 30px;
 }
-.sm-md-nav ul li a {
+.nav ul li:not(:last-child) {
+  margin-right: 23px;
+}
+@media (min-width: 768px) {
+  .nav ul li:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.nav ul li a {
   display: inline-block;
-  padding: 5px 10px;
+  line-height: 40px;
   text-align: center;
   text-decoration: none;
 }
-.sm-md-nav ul li a.active {
+@media (min-width: 768px) {
+  .nav ul li a {
+    line-height: 50px;
+  }
+}
+.nav ul li a.active {
   color: orange;
 }
 .profile,
@@ -123,7 +93,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 10px 10px 10px 10px;
   overflow-y: auto;
   outline: 1px solid black;
@@ -157,19 +127,16 @@ body {
   .phone-header {
     display: none;
   }
-  .sm-md-nav {
-    display: block;
-  }
   .profile,
   .expr,
   .github,
   .blog {
-    padding: 70px 15px 15px 15px;
-    margin-top: 0px;
+    padding: 15px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 992px) {
-  .sm-md-nav {
+  .nav {
     width: 60%;
     left: 40%;
   }
@@ -186,7 +153,7 @@ body {
   }
 }
 @media (min-width: 1200px) {
-  .sm-md-nav {
+  .nav {
     display: none;
   }
   .profile,
@@ -215,21 +182,4 @@ body {
     width: 30%;
     height: 50%;
   }
-  /*
-  .profile {
-    float: left;
-    width: 27%;
-    height: 100%;
-  }
-  .expr {
-    float:left;
-    width: 46%;
-    height: 100%;
-  }
-  .github, .blog {
-    float:left;
-    width: 27%;
-    height: 50%;
-  }
-  */
 }

@@ -19,7 +19,7 @@ window.getMedia = function() {
 }
 
 
-var $intro = $('.filter, .sm-md-nav, .profile, .expr, .github, .blog');
+var $intro = $('.filter, .nav, .profile, .expr, .github, .blog');
 
 $intro.addClass('intro')
 setTimeout(function() {
