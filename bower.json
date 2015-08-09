@@ -1,0 +1,16 @@
+{
+  "name": "github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dankahle/dankahle.github.io",
+  "authors": [
+    "Dan Kahle <dan.kahle@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-animate": "~1.4.3",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
+    "restangular": "~1.5.1",
+    "angular-touch": "~1.4.3"
+  }
+}

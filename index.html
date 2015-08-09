@@ -1,43 +1,45 @@
-<html>
+<html ng-app="app">
 <head>
-  <link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="less/site.css">
 </head>
-<body style="padding-left:40px">
-	<br>
-	<h3>Welcome to Dan Kahle's <a style="text-decoration: underline" href="https://github.com/dankahle">github</a></h3>
-	<br>
-	<h4>Current Projects</h4>
-	<br>
-	<table class="table" style="width:50%">
-		<tr>
-			<th>Title</th>
-			<th>Github Project</th>
-			<th></th>
-		</tr>
-		<tr>
-			<td>Cloud Service</td>
-			<td><a href="https://github.com/dankahle/cloud">Project</a></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Cloud Site</td>
-			<td><a href="https://github.com/dankahle/cloud-one-vs">Project</a></td>
-			<td><a href="https://dankahle.github.io/cloud-one-vs">Site</a></td>
-		</tr>
-		<tr>
-			<td>Rotten Tomato Search</td>
-			<td><a href="https://github.com/dankahle/RottenTomatoSearch">Project</a></td>
-			<td><a href="https://dankahle.github.io/RottenTomatoSearch">Site</a></td>
-		</tr>
-		<tr>
-			<td>jsonp</td>
-			<td><a href="https://github.com/dankahle/jsonp">Project</a></td>
-			<td><a href="http://desolate-reef-8955.herokuapp.com">Site</a></td>
-		</tr>
-	</table>
+<body ng-controller="bodyCtrl">
+<div class="filter"></div>
+<div class="phone-header"></div>
+<nav class="phone-nav"></nav>
+<nav class="sm-md-nav">
+	<ul>
+		<li class="visible-sm-inline-block"><a href="" ng-class="{active: view == 'profile'}"
+				 ng-click="changeView('profile')">profile</a></li>
+		<li><a href="" ng-class="{active: view == 'expr'}"
+				 ng-click="changeView('expr')">experience</a></li>
+		<li><a href="" ng-class="{active: view == 'github'}"
+				 ng-click="changeView('github')">github</a></li>
+		<li><a href="" ng-class="{active: view == 'blog'}"
+				 ng-click="changeView('blog')">blog</a></li>
+	</ul>
+</nav>
+
+
+<div class="profile" >profile</div>
+<div class="expr" >experience</div>
+<div class="github" >github</div>
+<div class="blog" >blog</div>
 
 
 
+	<script src="vendor/jquery.min.js"></script>
+	<script src="vendor/lodash.min.js"></script>
+	<script src="vendor/angular.js"></script>
+	<script src="vendor/angular-animate.js"></script>
+<script src="vendor/angular-touch.js"></script>
+<!--
+	<script src="vendor/angular-ui-router.js"></script>
+	<script src="vendor/restangular.js"></script>
+	<script src="vendor/bootstrap.min.js"></script>
+-->
+	<script src="js/site.js"></script>
+	<script src="app/app.js"></script>
 
 </body>
 </html>
