@@ -19,7 +19,7 @@ app.controller('bodyCtrl', function ($scope, $compile) {
 	$(window).resize(function() {
 		var size;
 		if((size = getMedia()) != curMedia) {
-			log('change media', size)
+			//log('change media', size)
 			curMedia = size;
 			//$scope.$apply('curMedia = "' + size + '"');
 			if(curMedia == 'md' && $scope.view == 'profile')
@@ -36,11 +36,15 @@ app.controller('bodyCtrl', function ($scope, $compile) {
 		safeDigest($scope);
 	})
 
+	var $phoneNav = $('.phone-nav');
 
 	var changeView = $scope.changeView = function(view) {
+		if(curMedia == 'xs')
+			showPhoneNav = false;
+
 		if($scope.view != view) {
 			$scope.view = view;
-			log('change view', view)
+			//log('change view', view)
 			var $all = $('.profile, .expr, .github, .blog');
 
 			if(view == 'all') {
@@ -65,6 +69,7 @@ app.controller('bodyCtrl', function ($scope, $compile) {
 
 		}
 	}
+
 
 
 	$(window).resize();

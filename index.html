@@ -5,8 +5,19 @@
 </head>
 <body ng-controller="bodyCtrl">
 <div class="filter"></div>
-<div class="phone-header"></div>
-<nav class="phone-nav"></nav>
+<a  class="phone-header" href="#" ng-click="showPhoneNav = !showPhoneNav">{{view}}</a>
+<nav class="phone-nav" ng-show="showPhoneNav">
+	<ul>
+		<li><a href="" ng-class="{active: view == 'profile'}"
+															ng-click="changeView('profile')">profile</a></li>
+		<li><a href="" ng-class="{active: view == 'expr'}"
+				 ng-click="changeView('expr')">experience</a></li>
+		<li><a href="" ng-class="{active: view == 'github'}"
+				 ng-click="changeView('github')">github</a></li>
+		<li><a href="" ng-class="{active: view == 'blog'}"
+				 ng-click="changeView('blog')">blog</a></li>
+	</ul>
+</nav>
 <nav class="sm-md-nav">
 	<ul>
 		<li class="visible-sm-inline-block"><a href="" ng-class="{active: view == 'profile'}"

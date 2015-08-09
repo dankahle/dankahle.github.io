@@ -3,6 +3,7 @@
 @import 'dk-mixins';
 
 
+
 .introTrans() {
   -webkit-transition: opacity  ease-in-out 3s;
   -o-transition: opacity  ease-in-out 3s;
@@ -44,6 +45,56 @@ body {
   }
 }
 
+@phoneHeaderHeight: 30px;
+
+.phone-header {
+  display: block;
+  width: 100%;
+  height: @phoneHeaderHeight;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid #666;
+  transition: .2s;
+  &:hover {
+    background: rgba(0,0,255,.2);
+    text-decoration: none;
+  }
+}
+
+
+.phone-nav {
+  position: fixed;
+  top: @phoneHeaderHeight;
+  left: 0;
+  width: 80%;
+  margin: 10px auto;
+  z-index: 10;
+  font-size: 16px;
+  opacity: 1;
+  .trans;
+  &.ng-hide {
+    opacity: 0;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    li {
+      a {
+        display: block;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        &.active {
+          color: orange;//todo-tune
+        }
+      }
+    }
+  }
+}
+
+
 .sm-md-nav {
   display: none;
   position: fixed;
@@ -74,7 +125,7 @@ body {
         text-align: center;
         text-decoration: none;
         &.active {
-          color: orange;
+          color: orange;//todo-tune
         }
       }
     }
@@ -89,7 +140,8 @@ body {
   width: 100%;
   height: 100%;
 
-  padding: 40px 10px 10px 10px;//todo-tune
+  margin-top: @phoneHeaderHeight;
+  padding: 10px 10px 10px 10px;//todo-tune
   overflow-y: auto;
   .outline;
   opacity: 0;
@@ -107,12 +159,17 @@ body {
 
 @media (min-width: @screen-sm) {
 
+  .phone-header {
+    display: none;
+  }
+
   .sm-md-nav {
     display: block;
   }
 
   .profile, .expr, .github, .blog {
     padding: 70px 15px 15px 15px;//todo-tune
+    margin-top: 0px;
   }
 }
 
