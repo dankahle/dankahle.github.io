@@ -202,27 +202,27 @@ body {
   transition: 0s;
 }
 .dk-expr .desc.ng-hide-remove {
-  -webkit-transition: ease-in 0.7s;
-  -o-transition: ease-in 0.7s;
-  transition: ease-in 0.7s;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 .dk-expr .desc.ng-hide {
-  transform: translateY(-100%);
+  opacity: 0;
 }
 .dk-expr .summary {
-  -webkit-transition: ease-in 0.7s;
-  -o-transition: ease-in 0.7s;
-  transition: ease-in 0.7s;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
   transform: translateY(0%);
 }
 .dk-expr .summary.ng-hide-add {
   transition: 0s;
 }
 .dk-expr .summary.ng-hide-remove {
-  -webkit-transition: ease-in 0.7s;
-  -o-transition: ease-in 0.7s;
-  transition: ease-in 0.7s;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 .dk-expr .summary.ng-hide {
-  transform: translateY(-100%);
+  opacity: 0;
 }

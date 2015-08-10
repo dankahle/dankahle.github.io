@@ -197,7 +197,7 @@ body {
 }
 
 .dk-expr {
-   @tranSpeed: .7s;
+   @tranSpeed: .3s;
    .trans() {
       -webkit-transition: ease-in @tranSpeed;
       -o-transition: ease-in @tranSpeed;
@@ -216,7 +216,8 @@ body {
          .trans;
       }
       &.ng-hide {
-         transform: translateY(-100%);
+         //transform: translateY(-100%);
+         opacity: 0;
       }
    }
    .summary {
@@ -229,7 +230,8 @@ body {
          .trans;
       }
       &.ng-hide {
-         transform: translateY(-100%);
+         //transform: translateY(-100%);
+         opacity: 0;
       }
    }
 }
