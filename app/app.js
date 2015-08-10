@@ -12,8 +12,8 @@ var app = angular.module('app', ['ngAnimate', 'ngTouch']);
 app.controller('bodyCtrl', function ($scope, $compile) {
 	window.$scope = $scope;
 
-
-
+	$scope.arr = [1,2,3];
+	$scope.jobs = jobs;
 
 	window.curMedia = '';
 	$(window).resize(function() {

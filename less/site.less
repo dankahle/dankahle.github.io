@@ -1,195 +1,238 @@
-
 @import (reference) '../bower_components/bootstrap/less/variables';
 @import 'dk-mixins';
 
-
-
+@introSpeed: 3s;
 .introTrans() {
-  -webkit-transition: opacity  ease-in-out 3s;
-  -o-transition: opacity  ease-in-out 3s;
-  transition: opacity  ease-in-out 3s;
+   -webkit-transition: opacity ease-in-out @introSpeed;
+   -o-transition: opacity ease-in-out @introSpeed;
+   transition: opacity ease-in-out @introSpeed;
 }
 
+@tranSpeed: .5s;
 .trans() {
-  -webkit-transition: opacity .5s, left .5s, top .5s;
-  -o-transition: opacity .5s, left .5s, top .5s;
-  transition: opacity .5s, left .5s, top .5s;
+   -webkit-transition: @tranSpeed;
+   -o-transition: @tranSpeed;
+   transition: @tranSpeed;
 }
 
-.border
+html a {
+   text-decoration: none !important;
+   &:hover {
+      text-decoration: none !important;
+   }
+}
 
 html, body {
-  height: 100%;
+   height: 100%;
 }
 
 body {
-  background-image: url('../img/ocean.jpg');
-  background-size: cover;
+   background-image: url('../img/ocean.jpg');
+   background-size: cover;
 }
 
 .filter {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: white;
-  z-index: -1;
-  opacity: 0;
-  .trans;
-  &.intro {
-    .introTrans;
-  }
-  &.in {
-    opacity: .5;
-  }
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: white;
+   z-index: -1;
+   opacity: 0;
+   .trans;
+   &.intro {
+      .introTrans;
+   }
+   &.in {
+      opacity: .5;
+   }
 }
 
 @nav-height-xs: 40px;
 @nav-height-sm: 50px;
 
 .nav {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  font-size: 16px;
-  opacity: 0;
-  .trans;
-  &.intro {
-    .introTrans;
-  }
-  &.in {
-    opacity: 1;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    white-space: nowrap;
-    li {
-      display: inline-block;
-      &:not(:last-child) {
-        margin-right: 11px;
-        @media (min-width: @screen-sm) {
-          margin-right: 30px;
-        }
+   display: block;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 10;
+   font-size: 16px;
+   opacity: 0;
+   .trans;
+   &.intro {
+      .introTrans;
+   }
+   &.in {
+      opacity: 1;
+   }
+   ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      white-space: nowrap;
+      li {
+         display: inline-block;
+         &:not(:last-child) {
+            margin-right: 11px;
+            @media (min-width: @screen-sm) {
+               margin-right: 30px;
+            }
+         }
+         a {
+            display: inline-block;
+            padding: 0px 6px;
+            //.outline;
+            line-height: @nav-height-xs;
+            @media (min-width: @screen-sm) {
+               line-height: @nav-height-sm;
+               padding: 0px 10px;
+            }
+            text-align: center;
+            &.active {
+               color: orange; //todo-tune
+            }
+         }
       }
-      a {
-        display: inline-block;
-        padding: 0px 6px;
-        //.outline;
-        line-height: @nav-height-xs;
-        @media (min-width: @screen-sm) {
-          line-height: @nav-height-sm;
-          padding: 0px 10px;
-        }
-        text-align: center;
-        text-decoration: none;
-        &.active {
-          color: orange;//todo-tune
-        }
-      }
-    }
-  }
+   }
 
 }
 
 .profile, .expr, .github, .blog {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-
-  margin-top: @nav-height-xs;//todo-tune
-  padding: 10px 10px 10px 10px;//todo-tune
-  overflow-y: auto;
-  .outline;
-  opacity: 0;
-  .trans;
-  &.intro {
-    .introTrans;
-  }
-  &.in {
-    opacity: 1;
-  }
-  &.active {
-    z-index: 5;
-  }
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   margin-top: @nav-height-xs; //todo-tune
+   padding: 10px 10px 10px 10px; //todo-tune
+   overflow-y: auto;
+   .outline;
+   opacity: 0;
+   .trans;
+   &.intro {
+      .introTrans;
+   }
+   &.in {
+      opacity: 1;
+   }
+   &.active {
+      z-index: 5;
+   }
 }
 
 @media (min-width: @screen-sm) {
 
-  .phone-header {
-    display: none;
-  }
+   .phone-header {
+      display: none;
+   }
 
-  .profile, .expr, .github, .blog {
-    padding: 15px;//todo-tune
-    margin-top: @nav-height-sm;//todo-tune
-  }
+   .profile, .expr, .github, .blog {
+      padding: 15px; //todo-tune
+      margin-top: @nav-height-sm; //todo-tune
+   }
 }
 
 @media (min-width: @screen-md) {
 
-  @profileWidth: 40%;
+   @profileWidth: 40%;
 
-  .nav {
-    width: 100% - @profileWidth;
-    left: @profileWidth;
-  }
+   .nav {
+      width: 100% - @profileWidth;
+      left: @profileWidth;
+   }
 
-  .profile {
-    width: @profileWidth;
-    height: 100%;
-  }
-  .expr, .github, .blog {
-    left: @profileWidth;
-    width: 60%;
-    height: 100%;
-  }
+   .profile {
+      width: @profileWidth;
+      height: 100%;
+   }
+
+   .expr, .github, .blog {
+      left: @profileWidth;
+      width: 60%;
+      height: 100%;
+   }
 
 }
 
 @media (min-width: @screen-lg) {
 
-  @width: 30%;
-  
-  .nav {
-    display: none;
-  }
+   @width: 30%;
 
-  .profile, .expr, .github, .blog {
-    padding: 15px;//todo-tune
-  }
-    .profile {
-    width: @width;
-    height: 100%;
-  }
-  .expr {
-    left: @width;
-    width: 100% - (2 * @width);
-    height: 100%;
-  }
-  .github {
-    left: 100% - @width;
-    width: @width;
-    height: 50%;
-  }
+   .nav {
+      display: none;
+   }
 
-  .blog {
-    top: 50%;
-    left: 100% - @width;
-    width: @width;
-    height: 50%;
-  }
+   .profile, .expr, .github, .blog {
+      padding: 0px 15px 15px; //todo-tune
+   }
+
+   .profile {
+      width: @width;
+      height: 100%;
+   }
+
+   .expr {
+      left: @width;
+      width: 100% - (2 * @width);
+      height: 100%;
+   }
+
+   .github {
+      left: 100% - @width;
+      width: @width;
+      height: 50%;
+   }
+
+   .blog {
+      top: 50%;
+      left: 100% - @width;
+      width: @width;
+      height: 50%;
+   }
 
 }
 
+.dk-expr {
+   @tranSpeed: .7s;
+   .trans() {
+      -webkit-transition: ease-in @tranSpeed;
+      -o-transition: ease-in @tranSpeed;
+      transition: ease-in @tranSpeed;
+   }
+   margin-top: 30px;
+   .title {
+      font-size: 20px;
+   }
+   .desc {
+      transform: translateY(0%);
+      &.ng-hide-add {
+         transition: 0s;
+      }
+      &.ng-hide-remove {
+         .trans;
+      }
+      &.ng-hide {
+         transform: translateY(-100%);
+      }
+   }
+   .summary {
+      .trans;
+      transform: translateY(0%);
+      &.ng-hide-add {
+         transition: 0s;
+      }
+      &.ng-hide-remove {
+         .trans;
+      }
+      &.ng-hide {
+         transform: translateY(-100%);
+      }
+   }
+}
 
 
 

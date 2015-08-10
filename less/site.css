@@ -1,7 +1,13 @@
 * {
   box-sizing: border-box;
 }
-.border html,
+html a {
+  text-decoration: none !important;
+}
+html a:hover {
+  text-decoration: none !important;
+}
+html,
 body {
   height: 100%;
 }
@@ -18,9 +24,9 @@ body {
   background: white;
   z-index: -1;
   opacity: 0;
-  -webkit-transition: opacity .5s, left .5s, top .5s;
-  -o-transition: opacity .5s, left .5s, top .5s;
-  transition: opacity .5s, left .5s, top .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .filter.intro {
   -webkit-transition: opacity ease-in-out 3s;
@@ -39,9 +45,9 @@ body {
   z-index: 10;
   font-size: 16px;
   opacity: 0;
-  -webkit-transition: opacity .5s, left .5s, top .5s;
-  -o-transition: opacity .5s, left .5s, top .5s;
-  transition: opacity .5s, left .5s, top .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .nav.intro {
   -webkit-transition: opacity ease-in-out 3s;
@@ -74,7 +80,6 @@ body {
   padding: 0px 6px;
   line-height: 40px;
   text-align: center;
-  text-decoration: none;
 }
 @media (min-width: 768px) {
   .nav ul li a {
@@ -100,9 +105,9 @@ body {
   outline: 1px solid black;
   outline-offset: -1px;
   opacity: 0;
-  -webkit-transition: opacity .5s, left .5s, top .5s;
-  -o-transition: opacity .5s, left .5s, top .5s;
-  transition: opacity .5s, left .5s, top .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .profile.intro,
 .expr.intro,
@@ -161,7 +166,7 @@ body {
   .expr,
   .github,
   .blog {
-    padding: 15px;
+    padding: 0px 15px 15px;
   }
   .profile {
     width: 30%;
@@ -183,4 +188,41 @@ body {
     width: 30%;
     height: 50%;
   }
+}
+.dk-expr {
+  margin-top: 30px;
+}
+.dk-expr .title {
+  font-size: 20px;
+}
+.dk-expr .desc {
+  transform: translateY(0%);
+}
+.dk-expr .desc.ng-hide-add {
+  transition: 0s;
+}
+.dk-expr .desc.ng-hide-remove {
+  -webkit-transition: ease-in 0.7s;
+  -o-transition: ease-in 0.7s;
+  transition: ease-in 0.7s;
+}
+.dk-expr .desc.ng-hide {
+  transform: translateY(-100%);
+}
+.dk-expr .summary {
+  -webkit-transition: ease-in 0.7s;
+  -o-transition: ease-in 0.7s;
+  transition: ease-in 0.7s;
+  transform: translateY(0%);
+}
+.dk-expr .summary.ng-hide-add {
+  transition: 0s;
+}
+.dk-expr .summary.ng-hide-remove {
+  -webkit-transition: ease-in 0.7s;
+  -o-transition: ease-in 0.7s;
+  transition: ease-in 0.7s;
+}
+.dk-expr .summary.ng-hide {
+  transform: translateY(-100%);
 }

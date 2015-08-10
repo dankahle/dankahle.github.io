@@ -20,7 +20,11 @@
 
 
 <div class="profile" >profile</div>
-<div class="expr" >experience</div>
+<div class="expr">
+   <dk-accordion>
+      <dk-expr ng-repeat="job in jobs"></dk-expr>
+   </dk-accordion>
+</div>
 <div class="github" >github</div>
 <div class="blog" >blog</div>
 
@@ -36,8 +40,10 @@
 	<script src="vendor/restangular.js"></script>
 	<script src="vendor/bootstrap.min.js"></script>
 -->
+	<script src="app/data/jobs.js"></script>
 	<script src="js/site.js"></script>
-	<script src="app/app.js"></script>
+<script src="app/app.js"></script>
+<script src="app/directives.js"></script>
 
 </body>
 </html>
