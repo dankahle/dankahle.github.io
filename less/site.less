@@ -108,7 +108,8 @@ body {
    width: 100%;
    height: 100%;
    margin-top: @nav-height-xs; //todo-tune
-   padding: 10px 10px 10px 10px; //todo-tune
+   padding: 0px 15px 15px; //todo-tune
+   //padding: 10px 10px 10px 10px; //todo-tune
    overflow-y: auto;
    .outline;
    opacity: 0;
@@ -131,7 +132,6 @@ body {
    }
 
    .profile, .expr, .github, .blog {
-      padding: 15px; //todo-tune
       margin-top: @nav-height-sm; //todo-tune
    }
 }
@@ -167,7 +167,6 @@ body {
    }
 
    .profile, .expr, .github, .blog {
-      padding: 0px 15px 15px; //todo-tune
    }
 
    .profile {
@@ -203,7 +202,7 @@ body {
       -o-transition: ease-in @tranSpeed;
       transition: ease-in @tranSpeed;
    }
-   margin-top: 30px;
+   margin-top: 20px;
    .title {
       font-size: 20px;
    }
@@ -234,6 +233,18 @@ body {
    }
 }
 
+.article {
+   &:first-child {
+      margin-top: 20px;
+   }
+   &:not(:first-child) {
+      margin-top: 20px;
+   }
+   .title {
+      font-size: 20px;
+   }
+
+}
 
 
 

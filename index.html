@@ -28,8 +28,18 @@
       <dk-expr ng-repeat="job in jobs"></dk-expr>
    </dk-accordion>
 </div>
-<div class="github" >github</div>
-<div class="blog" >blog</div>
+<div class="github" >
+   <div class="article" ng-repeat="item in repos">
+      <a class="title" href="{{item.url}}" target="_blank">{{item.title}}</a>
+      <div class="desc">{{item.desc}}</div>
+   </div>
+</div>
+<div class="blog" >
+   <div class="article" ng-repeat="item in blogs">
+      <a class="title" href="{{item.url}}" target="_blank">{{item.title}}</a>
+      <div class="desc">{{item.desc}}</div>
+   </div>
+</div>
 
 
 
@@ -43,7 +53,7 @@
 	<script src="vendor/restangular.js"></script>
 	<script src="vendor/bootstrap.min.js"></script>
 -->
-	<script src="app/data/jobs.js"></script>
+	<script src="app/data.js"></script>
 	<script src="js/site.js"></script>
 <script src="app/app.js"></script>
 <script src="app/directives.js"></script>

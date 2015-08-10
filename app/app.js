@@ -13,38 +13,39 @@ app.controller('bodyCtrl', function ($scope, $compile) {
 	window.$scope = $scope;
 
 	$scope.arr = [1,2,3];
-	$scope.jobs = jobs;
+   $scope.jobs = jobs;
+   $scope.repos = repos;
+   $scope.blogs = blogs;
 
 	window.curMedia = '';
 	$(window).resize(function() {
 		var size;
 		if((size = getMedia()) != curMedia) {
-			//log('change media', size)
+			log('change media', size)
 			curMedia = size;
 			//$scope.$apply('curMedia = "' + size + '"');
 			if(curMedia == 'md' && $scope.view == 'profile')
-				changeView('expr');
+				changeView('expr', true);
 
 		if(curMedia == 'xs' || curMedia == 'sm')
-			changeView('profile');
+			changeView('profile', true);
 		else if(curMedia == 'md') {
-			changeView('expr');
+			changeView('expr', true);
 		}
 		else if(curMedia == 'lg')
-			changeView('all');
+			changeView('all', true);
 		}
 		safeDigest($scope);
 	})
 
 	var $phoneNav = $('.phone-nav');
 
-	var changeView = $scope.changeView = function(view) {
-		if(curMedia == 'xs')
-			showPhoneNav = false;
+   var $profile = $('.profile');
+	var changeView = $scope.changeView = function(view, mediaChange) {
 
-		if($scope.view != view) {
+		if(mediaChange || $scope.view != view) {
 			$scope.view = view;
-			//log('change view', view)
+			log('change view', view)
 			var $all = $('.profile, .expr, .github, .blog');
 
 			if(view == 'all') {
@@ -56,13 +57,20 @@ app.controller('bodyCtrl', function ($scope, $compile) {
 
 			else {
 				if(curMedia != 'md') {
-					$('.profile').hide().removeClass('in');
+					$profile.hide().removeClass('in');
 				}
 				$('.expr, .github, .blog').hide().removeClass('in');
 				var $view = $('.' + view);
 				$view.show();
+
+            if(curMedia == 'md' && mediaChange)
+               $profile.show();
+
 				setTimeout(function() {
 					$view.addClass('in');
+
+               if(curMedia == 'md' && mediaChange)
+                  $profile.addClass('in');
 				}, 100)
 
 			}
