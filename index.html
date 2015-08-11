@@ -3,7 +3,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>dk github.io</title>
-	<link rel="stylesheet" href="vendor/bootstrap.min.css">
+   <link rel="stylesheet" href="less/bootstrap.css">
+   <link rel="stylesheet" href="vendor/dk-modal.css">
 	<link rel="stylesheet" href="less/site.css">
 </head>
 <body ng-controller="bodyCtrl">
@@ -18,36 +19,124 @@
 				 ng-click="changeView('github')">github</a></li>
 		<li><a href="" ng-class="{active: view == 'blog'}"
 				 ng-click="changeView('blog')">blog</a></li>
+      <a href="" class="qrcode-nav hidden-xs" dk-modal-trigger=".qrcodeModal" data-width="150px"></a>
 	</ul>
 </div>
 
 
-<div class="profile" >profile</div>
-<div class="expr">
+<div class="profile" >
+   <a href="" class="qrcode-profile visible-lg-block" dk-modal-trigger=".qrcodeModal" data-width="150px"></a>
+   <div class="clearfix">
+      <img class="pic" src="img/Elfin forest 300x300.jpg">
+
+      <div class="pic-side">
+         <div class="name">
+            dan kahle
+         </div>
+         <div class="title">
+            sr. web developer - <span style="white-space: nowrap">mean stack</span>
+         </div>
+         <p>
+            dan.kahle@gmail.com<br>
+            san diego, ca<br>
+         </p>
+      </div>
+   </div>
+
+   <div class="heading">skillset</div>
+   <p>
+      <span class="skill">front end</span>
+      HTML5, ECMAScript6, CSS3, AngularJS, Polymer, SASS/LESS, Bootstrap3,  jQuery, lodash, async
+   </p>
+
+   <p>
+      <span class="skill">angular</span>
+      UI-Router, Restangular
+   </p>
+
+   <p>
+      <span class="skill">back-end service</span>
+      Node/Express/MongoDB native driver/Mongoose, WebAPI2, WCF, Entity Framework6
+   </p>
+
+   <p>
+      <span class="skill">server-side web application</span>
+      Asp.net MVC5, Asp.net
+   </p>
+
+   <p>
+      <span class="skill">database</span>
+      MongoDB, Sql Server, Amazon (S3/EC2/RDS), Azure (Storage/Sql Database)
+   </p>
+
+   <p>
+      <span class="skill">test</span>
+      Karma/Jasmine/Protractor, Mocha/Chai/Sinon, MSTest, xUnit, MOQ
+   </p>
+
+   <p>
+      <span class="skill">tools</span>
+      WebStorm9, npm/bower, gulp/grunt, git, github, yeoman, VisualStudio, TFS, Subversion, Balsamiq
+   </p>
+
+   <p>
+      <span class="skill">cloud</span>
+      Amazon Web Services, Microsoft Azure, Heroku, MongoLab
+   </p>
+
+   <p>
+      <span class="skill">patterns</span>
+      MVC, MVVM, module/closure/AMD, Promises, IoC, Repository, GoF, Enterprise Architecture, Refactoring
+   </p>
+
+   <div class="heading">education</div>
+
+   <a href="www.asu.edu">Arizona State University</a>&nbsp;&nbsp;&nbsp;&nbsp;BSE Electrical Engineering
+   <br>
+   <br>
+
+</div>
+
+
+
+<article class="expr">
+   <div class="view-heading visible-lg-block">experience</div>
+
    <dk-accordion>
       <dk-expr ng-repeat="job in jobs"></dk-expr>
    </dk-accordion>
-</div>
+</article>
 <div class="github" >
-   <div class="article" ng-repeat="item in repos">
+   <div class="view-heading visible-lg-block">github</div>
+
+   <article class="article" ng-repeat="item in repos">
       <a class="title" href="{{item.url}}" target="_blank">{{item.title}}</a>
       <div class="desc">{{item.desc}}</div>
-   </div>
-</div>
-<div class="blog" >
-   <div class="article" ng-repeat="item in blogs">
-      <a class="title" href="{{item.url}}" target="_blank">{{item.title}}</a>
-      <div class="desc">{{item.desc}}</div>
-   </div>
+   </article>
 </div>
 
+<div class="github-blog-separator"></div>
+
+<div class="blog" >
+   <div class="view-heading visible-lg-block">blog</div>
+   <article class="article" ng-repeat="item in blogs">
+      <a class="title" href="{{item.url}}" target="_blank">{{item.title}}</a>
+      <div class="desc">{{item.desc}}</div>
+   </article>
+</div>
+
+<div class="qrcodeModal" style="display:none">
+   <img src="img/qrcode.png" width="148" height="148">
+</div>
 
 
 	<script src="vendor/jquery.min.js"></script>
 	<script src="vendor/lodash.min.js"></script>
 	<script src="vendor/angular.js"></script>
-	<script src="vendor/angular-animate.js"></script>
-<script src="vendor/angular-touch.js"></script>
+   <script src="vendor/angular-animate.js"></script>
+   <script src="vendor/angular-sanitize.js"></script>
+   <script src="vendor/angular-touch.js"></script>
+   <script src="vendor/dk-modal.min.js"></script>
 <!--
 	<script src="vendor/angular-ui-router.js"></script>
 	<script src="vendor/restangular.js"></script>

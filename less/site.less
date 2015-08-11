@@ -1,7 +1,18 @@
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
 @import (reference) '../bower_components/bootstrap/less/variables';
 @import 'dk-mixins';
 
-@introSpeed: 3s;
+
+@padding: 15px;
+@nav-height-xs: 40px;
+@nav-height-sm: 50px;
+@nav-plus: 10px;
+@purple: #8316ab;
+@color-heading: @purple;
+
+@introSpeed: 0s;// 3s
 .introTrans() {
    -webkit-transition: opacity ease-in-out @introSpeed;
    -o-transition: opacity ease-in-out @introSpeed;
@@ -45,14 +56,12 @@ body {
       .introTrans;
    }
    &.in {
-      opacity: .5;
+      opacity: .6;
    }
 }
 
-@nav-height-xs: 40px;
-@nav-height-sm: 50px;
-
 .nav {
+   line-height: @nav-height-xs;
    display: block;
    position: fixed;
    top: 0;
@@ -85,8 +94,6 @@ body {
          a {
             display: inline-block;
             padding: 0px 6px;
-            //.outline;
-            line-height: @nav-height-xs;
             @media (min-width: @screen-sm) {
                line-height: @nav-height-sm;
                padding: 0px 10px;
@@ -98,20 +105,30 @@ body {
          }
       }
    }
+   .qrcode-nav {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url(../img/qrcode.png);
+      background-size: cover;
+      position: absolute;
+      top: 9px;
+      right: 9px;
+      opacity: .5;
+      text-decoration: none;
+   }
 
 }
 
 .profile, .expr, .github, .blog {
+   //.outline;
    position: fixed;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
-   margin-top: @nav-height-xs; //todo-tune
-   padding: 0px 15px 15px; //todo-tune
-   //padding: 10px 10px 10px 10px; //todo-tune
+   padding: (@nav-height-xs + @nav-plus) @padding @padding;
    overflow-y: auto;
-   .outline;
    opacity: 0;
    .trans;
    &.intro {
@@ -125,15 +142,81 @@ body {
    }
 }
 
+.profile {
+   @margin: 15px;
+   .clearfix;
+   .pic {
+      float: left;
+      width: 100%;
+      max-width: 260px;
+      @media (min-width: @screen-sm) {
+         max-width: 260px;
+      }
+      margin: 0 @padding @padding 0;
+      border-radius: 4px;
+
+   }
+   .pic-side {
+      overflow: hidden;
+      min-width: 174px;
+      margin-bottom: @margin;
+      .name {
+         font-size: 30px;
+         margin-top: -9px;
+         position: relative;
+      }
+      .title {
+         font-size: 20px;
+         margin-bottom: @margin;
+      }
+   }
+   .heading {
+      font-size: 22px;
+      color: @color-heading;
+      text-align: center;
+      margin-bottom: 10px;
+   }
+   .skill {
+      display:block;
+      font-size: 18px;
+      color: @link-color;
+      //margin-bottom: @margin;
+   }
+   p {
+      margin-bottom: @margin;
+   }
+   .qrcode-profile {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url(../img/qrcode.png);
+      background-size: cover;
+      position: absolute;
+      top: 15px;
+      right: 9px;
+      opacity: .5;
+      text-decoration: none;
+   }
+}
+
+.expr {
+
+}
+
+.github {
+
+}
+
+.blog {
+}
+
+
 @media (min-width: @screen-sm) {
 
-   .phone-header {
-      display: none;
+   .profile, .expr, .github, .blog {
+      padding-top: @nav-height-sm + @nav-plus;
    }
 
-   .profile, .expr, .github, .blog {
-      margin-top: @nav-height-sm; //todo-tune
-   }
 }
 
 @media (min-width: @screen-md) {
@@ -148,6 +231,7 @@ body {
    .profile {
       width: @profileWidth;
       height: 100%;
+      padding-top: @padding;
    }
 
    .expr, .github, .blog {
@@ -160,16 +244,26 @@ body {
 
 @media (min-width: @screen-lg) {
 
-   @width: 30%;
+   @width: 32%;
 
    .nav {
       display: none;
    }
 
+   .view-heading {
+      display:block;
+      font-size: 22px;
+      color: @color-heading;
+      text-align: center;
+      //margin-bottom: @margin;
+   }
+
    .profile, .expr, .github, .blog {
+      padding-top: 8px;
    }
 
    .profile {
+      padding-top: @padding;
       width: @width;
       height: 100%;
    }
@@ -178,19 +272,40 @@ body {
       left: @width;
       width: 100% - (2 * @width);
       height: 100%;
+      .view-heading {
+         top: 0px;
+         left: @width + 2;
+      }
    }
 
    .github {
       left: 100% - @width;
       width: @width;
-      height: 50%;
+      height: 49%;
+      .view-heading {
+         top: 0px;
+         left: 100% - @width + 2;
+      }
    }
 
    .blog {
-      top: 50%;
+      top: 51%;
       left: 100% - @width;
       width: @width;
-      height: 50%;
+      height: 49%;
+      .view-heading {
+         top: 50%;
+         left: 100% - @width + 2;
+         //border-top: 1px solid #555;
+      }
+   }
+
+   .github-blog-separator {
+      position: fixed;
+      top: 50%;
+      left: 100% - @width + 2;
+      width: @width - 4;
+      border-top: 1px solid #333;
    }
 
 }
@@ -203,6 +318,9 @@ body {
       transition: ease-in @tranSpeed;
    }
    margin-top: 20px;
+   &:first-of-type {
+      margin-top: 10px;
+   }
    .title {
       font-size: 20px;
    }
@@ -234,11 +352,9 @@ body {
 }
 
 .article {
-   &:first-child {
-      margin-top: 20px;
-   }
-   &:not(:first-child) {
-      margin-top: 20px;
+   margin-top: 20px;
+   &:first-of-type {
+      margin-top: 10px;
    }
    .title {
       font-size: 20px;

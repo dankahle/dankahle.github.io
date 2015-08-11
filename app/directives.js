@@ -21,8 +21,8 @@ app.directive('dkExpr', function () {
       replace: true,
       template: '<div class="dk-expr"> ' +
                   '<div class="title"><a href="" ng-click="toggleSummary($index)">{{job.title}}</a></div> ' +
-                  '<div class="desc" ng-hide="curSummary == $index">{{job.desc}}</div> ' +
-                  '<div class="summary" ng-show="curSummary == $index">{{job.summary}}</div> ' +
+                  '<div class="desc" ng-hide="curSummary == $index" ng-bind-html="job.desc"></div> ' +
+                  '<div class="summary" ng-show="curSummary == $index" ng-bind-html="job.summary"></div> ' +
                '</div>',
       link: function ($scope, elem, attr) {
 

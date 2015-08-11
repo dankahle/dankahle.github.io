@@ -6,7 +6,7 @@ function safeDigest(scope) {
 }
 
 
-var app = angular.module('app', ['ngAnimate', 'ngTouch']);
+var app = angular.module('app', ['ngAnimate', 'ngTouch', 'ngSanitize', 'dkModal']);
 
 
 app.controller('bodyCtrl', function ($scope, $compile) {
@@ -21,7 +21,7 @@ app.controller('bodyCtrl', function ($scope, $compile) {
 	$(window).resize(function() {
 		var size;
 		if((size = getMedia()) != curMedia) {
-			log('change media', size)
+			//log('change media', size)
 			curMedia = size;
 			//$scope.$apply('curMedia = "' + size + '"');
 			if(curMedia == 'md' && $scope.view == 'profile')
@@ -45,7 +45,7 @@ app.controller('bodyCtrl', function ($scope, $compile) {
 
 		if(mediaChange || $scope.view != view) {
 			$scope.view = view;
-			log('change view', view)
+			//log('change view', view)
 			var $all = $('.profile, .expr, .github, .blog');
 
 			if(view == 'all') {

@@ -21,7 +21,9 @@ window.getMedia = function() {
 
 var $intro = $('.filter, .nav, .profile, .expr, .github, .blog');
 
-$intro.addClass('intro in')
+setTimeout(function() {
+   $intro.addClass('intro in')
+}, 100)
 //$intro.addClass('in');
 
 $('.filter').on('transitionend webkitTransitionEnd', function() {
