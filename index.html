@@ -44,54 +44,14 @@
    </div>
 
    <div class="heading">skillset</div>
-   <p>
-      <span class="skill">front end</span>
-      HTML5, ECMAScript6, CSS3, AngularJS, Polymer, SASS/LESS, Bootstrap3,  jQuery, lodash, async
-   </p>
-
-   <p>
-      <span class="skill">angular</span>
-      UI-Router, Restangular
-   </p>
-
-   <p>
-      <span class="skill">back-end service</span>
-      Node/Express/MongoDB native driver/Mongoose, WebAPI2, WCF, Entity Framework6
-   </p>
-
-   <p>
-      <span class="skill">server-side web application</span>
-      Asp.net MVC5, Asp.net
-   </p>
-
-   <p>
-      <span class="skill">database</span>
-      MongoDB, Sql Server, Amazon (S3/EC2/RDS), Azure (Storage/Sql Database)
-   </p>
-
-   <p>
-      <span class="skill">test</span>
-      Karma/Jasmine/Protractor, Mocha/Chai/Sinon, MSTest, xUnit, MOQ
-   </p>
-
-   <p>
-      <span class="skill">tools</span>
-      WebStorm9, npm/bower, gulp/grunt, git, github, yeoman, VisualStudio, TFS, Subversion, Balsamiq
-   </p>
-
-   <p>
-      <span class="skill">cloud</span>
-      Amazon Web Services, Microsoft Azure, Heroku, MongoLab
-   </p>
-
-   <p>
-      <span class="skill">patterns</span>
-      MVC, MVVM, module/closure/AMD, Promises, IoC, Repository, GoF, Enterprise Architecture, Refactoring
-   </p>
+   <article class="article" ng-repeat="item in skills">
+      <span class="title">{{item.title}}</span>
+      <div class="desc">{{item.desc}}</div>
+   </article>
 
    <div class="heading">education</div>
 
-   <a href="www.asu.edu">Arizona State University</a>&nbsp;&nbsp;&nbsp;&nbsp;BSE Electrical Engineering
+   <a href="http://www.asu.edu" target="_blank">Arizona State University</a>&nbsp;&nbsp;&nbsp;&nbsp;BSE Electrical Engineering
    <br>
    <br>
 

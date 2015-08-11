@@ -69,6 +69,10 @@ body {
    width: 100%;
    z-index: 10;
    font-size: 16px;
+   //background: #e6ebeb;
+
+   background: rgba(230,235,235,.9);
+   box-shadow: 0 3px 10px rgba(230,235,235,.9);
    opacity: 0;
    .trans;
    &.intro {
@@ -148,7 +152,8 @@ body {
    .pic {
       float: left;
       width: 100%;
-      max-width: 260px;
+      max-width: 240px;
+      opacity: .8;
       @media (min-width: @screen-sm) {
          max-width: 260px;
       }
@@ -161,13 +166,20 @@ body {
       min-width: 174px;
       margin-bottom: @margin;
       .name {
-         font-size: 30px;
-         margin-top: -9px;
+         font-size: 24px;
+         margin-top: -7px;
+         @media (min-width: @screen-sm) {
+            font-size: 26px;
+            margin-top: -9px;
+         }
          position: relative;
       }
       .title {
-         font-size: 20px;
+         font-size: 18px;
          margin-bottom: @margin;
+         @media (min-width: @screen-sm) {
+            font-size: 20px;
+         }
       }
    }
    .heading {
@@ -213,6 +225,9 @@ body {
 
 @media (min-width: @screen-sm) {
 
+   .nav {
+      font-size: 18px;
+   }
    .profile, .expr, .github, .blog {
       padding-top: @nav-height-sm + @nav-plus;
    }
@@ -352,12 +367,13 @@ body {
 }
 
 .article {
-   margin-top: 20px;
+   margin-top: 18px;
    &:first-of-type {
       margin-top: 10px;
    }
    .title {
-      font-size: 20px;
+      font-size: 18px;
+      color: @link-color;
    }
 
 }

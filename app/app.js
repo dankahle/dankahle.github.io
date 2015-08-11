@@ -13,6 +13,7 @@ app.controller('bodyCtrl', function ($scope, $compile) {
 	window.$scope = $scope;
 
 	$scope.arr = [1,2,3];
+   $scope.skills = skills;
    $scope.jobs = jobs;
    $scope.repos = repos;
    $scope.blogs = blogs;
