@@ -36,10 +36,10 @@
          <div class="title">
             sr. web developer - <span style="white-space: nowrap">mean stack</span>
          </div>
-         <p>
+         <div class="info">
             dan.kahle@gmail.com<br>
             san diego, ca<br>
-         </p>
+         </div>
       </div>
    </div>
 
@@ -52,20 +52,18 @@
    <div class="heading">education</div>
 
    <a href="http://www.asu.edu" target="_blank">Arizona State University</a>&nbsp;&nbsp;&nbsp;&nbsp;BSE Electrical Engineering
-   <br>
-   <br>
 
+   <br><br>
 </div>
 
-
-
-<article class="expr">
+<div class="expr">
    <div class="view-heading visible-lg-block">experience</div>
 
    <dk-accordion>
       <dk-expr ng-repeat="job in jobs"></dk-expr>
    </dk-accordion>
-</article>
+   <br>
+</div>
 <div class="github" >
    <div class="view-heading visible-lg-block">github</div>
 
@@ -73,6 +71,7 @@
       <a class="title" href="{{item.url}}" target="_blank">{{item.title}}</a>
       <div class="desc">{{item.desc}}</div>
    </article>
+   <br>
 </div>
 
 <div class="github-blog-separator"></div>
@@ -83,6 +82,7 @@
       <a class="title" href="{{item.url}}" target="_blank">{{item.title}}</a>
       <div class="desc">{{item.desc}}</div>
    </article>
+   <br>
 </div>
 
 <div class="qrcodeModal" style="display:none">

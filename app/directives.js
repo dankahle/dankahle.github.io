@@ -19,7 +19,7 @@ app.directive('dkAccordion', function () {
 app.directive('dkExpr', function () {
    return {
       replace: true,
-      template: '<div class="dk-expr"> ' +
+      template: '<article class="dk-expr"> ' +
                   '<div class="title"><a href="" ng-click="toggleSummary($index)">{{job.title}}</a></div> ' +
                   '<div class="desc" ng-hide="curSummary == $index" ng-bind-html="job.desc"></div> ' +
                   '<div class="summary" ng-show="curSummary == $index" ng-bind-html="job.summary"></div> ' +
