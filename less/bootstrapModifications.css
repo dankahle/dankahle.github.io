@@ -1,0 +1,11 @@
+/*
+  trick to compile: need to comment out the reference import in main.css otherwise webstorm won't complile it as it's setup to compile root files only.
+*/
+.breadcrumb {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.01);
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 40px;
+  line-height: 38px;
+}
