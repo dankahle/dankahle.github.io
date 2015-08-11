@@ -194,8 +194,14 @@ body {
       color: @link-color;
       //margin-bottom: @margin;
    }
-   p {
-      margin-bottom: @margin;
+   .social-links {
+      text-align: center;
+      a {
+         margin-right: 5%;
+         @media (min-width: @screen-sm) {
+            margin-right: 7%;
+         }
+      }
    }
    .qrcode-profile {
       display: block;

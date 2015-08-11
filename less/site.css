@@ -198,8 +198,16 @@ body {
   font-size: 18px;
   color: #337ab7;
 }
-.profile p {
-  margin-bottom: 15px;
+.profile .social-links {
+  text-align: center;
+}
+.profile .social-links a {
+  margin-right: 5%;
+}
+@media (min-width: 768px) {
+  .profile .social-links a {
+    margin-right: 7%;
+  }
 }
 .profile .qrcode-profile {
   display: block;
