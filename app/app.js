@@ -83,3 +83,4 @@ app.controller('bodyCtrl', function ($scope, $compile) {
 
 	$(window).resize();
 })
+
