@@ -193,6 +193,9 @@ body {
   text-align: center;
   margin: 18px 0 10px;
 }
+.profile .heading.no-margin-bottom {
+  margin: 18px 0 0;
+}
 .profile .skill {
   display: block;
   font-size: 18px;
@@ -200,14 +203,10 @@ body {
 }
 .profile .social-links {
   text-align: center;
+  font-size: 18px;
 }
-.profile .social-links a {
-  margin-right: 5%;
-}
-@media (min-width: 768px) {
-  .profile .social-links a {
-    margin-right: 7%;
-  }
+.profile .social-links a:not(:last-of-type) {
+  margin-right: 7%;
 }
 .profile .qrcode-profile {
   display: block;

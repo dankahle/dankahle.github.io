@@ -187,6 +187,9 @@ body {
       color: @color-heading;
       text-align: center;
       margin: 18px 0 10px;
+      &.no-margin-bottom {
+         margin: 18px 0 0;
+      }
    }
    .skill {
       display:block;
@@ -195,12 +198,11 @@ body {
       //margin-bottom: @margin;
    }
    .social-links {
+      //margin-top: 8px;
       text-align: center;
-      a {
-         margin-right: 5%;
-         @media (min-width: @screen-sm) {
-            margin-right: 7%;
-         }
+      font-size: 18px;
+      a:not(:last-of-type) {
+         margin-right: 7%;
       }
    }
    .qrcode-profile {
