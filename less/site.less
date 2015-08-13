@@ -12,14 +12,14 @@
 @purple: #8316ab;
 @color-heading: @purple;
 
-@introSpeed: 0s;// 3s
+@introSpeed: 3s;// this speed is mirrored in js: site.js
 .introTrans() {
    -webkit-transition: opacity ease-in-out @introSpeed;
    -o-transition: opacity ease-in-out @introSpeed;
    transition: opacity ease-in-out @introSpeed;
 }
 
-@tranSpeed: .5s;
+@tranSpeed: .3s;
 .trans() {
    -webkit-transition: @tranSpeed;
    -o-transition: @tranSpeed;
@@ -50,14 +50,7 @@ body {
    left: 0;
    background: white;
    z-index: -1;
-   opacity: 0;
-   .trans;
-   &.intro {
-      .introTrans;
-   }
-   &.in {
-      opacity: .6;
-   }
+   opacity: .6;
 }
 
 .nav {
@@ -237,6 +230,10 @@ body {
       padding-top: @nav-height-sm + @nav-plus;
    }
 
+   .github-blog-separator {
+      display: none;
+   }
+
 }
 
 @media (min-width: @screen-md) {
@@ -321,11 +318,20 @@ body {
    }
 
    .github-blog-separator {
+      display: block;
       position: fixed;
       top: 50%;
       left: 100% - @width + 2;
       width: @width - 4;
       border-top: 1px solid #333;
+      opacity: 0;
+      .trans;
+      &.intro {
+         .introTrans;
+      }
+      &.in {
+         opacity: 1;
+      }
    }
 
 }

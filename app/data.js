@@ -124,7 +124,7 @@ var jobs = [
 
 var repos = [
    {
-      title: 'dk-modal',
+      title: 'dk-modal github',
       url: 'https://github.com/dankahle/dk-modal',
       desc: 'An angular module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
    },
@@ -142,7 +142,7 @@ var repos = [
 
 var blogs = [
    {
-      title: 'dk-modal',
+      title: 'dk-modal blog',
       url: 'https://github.com/dankahle/dk-modal',
       desc: 'An angular module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
    },

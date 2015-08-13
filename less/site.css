@@ -24,17 +24,6 @@ body {
   left: 0;
   background: white;
   z-index: -1;
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-.filter.intro {
-  -webkit-transition: opacity ease-in-out 0s;
-  -o-transition: opacity ease-in-out 0s;
-  transition: opacity ease-in-out 0s;
-}
-.filter.in {
   opacity: .6;
 }
 .nav {
@@ -48,14 +37,14 @@ body {
   font-size: 16px;
   background: #e6ebeb;
   opacity: 0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .nav.intro {
-  -webkit-transition: opacity ease-in-out 0s;
-  -o-transition: opacity ease-in-out 0s;
-  transition: opacity ease-in-out 0s;
+  -webkit-transition: opacity ease-in-out 3s;
+  -o-transition: opacity ease-in-out 3s;
+  transition: opacity ease-in-out 3s;
 }
 .nav.in {
   opacity: 1;
@@ -116,17 +105,17 @@ body {
   padding: 50px 15px 15px;
   overflow-y: auto;
   opacity: 0;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .profile.intro,
 .expr.intro,
 .github.intro,
 .blog.intro {
-  -webkit-transition: opacity ease-in-out 0s;
-  -o-transition: opacity ease-in-out 0s;
-  transition: opacity ease-in-out 0s;
+  -webkit-transition: opacity ease-in-out 3s;
+  -o-transition: opacity ease-in-out 3s;
+  transition: opacity ease-in-out 3s;
 }
 .profile.in,
 .expr.in,
@@ -229,6 +218,9 @@ body {
   .blog {
     padding-top: 60px;
   }
+  .github-blog-separator {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .nav {
@@ -298,11 +290,24 @@ body {
     left: 70%;
   }
   .github-blog-separator {
+    display: block;
     position: fixed;
     top: 50%;
     left: 70%;
     width: 28%;
     border-top: 1px solid #333;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .github-blog-separator.intro {
+    -webkit-transition: opacity ease-in-out 3s;
+    -o-transition: opacity ease-in-out 3s;
+    transition: opacity ease-in-out 3s;
+  }
+  .github-blog-separator.in {
+    opacity: 1;
   }
 }
 .dk-expr {
