@@ -42,9 +42,9 @@ body {
   transition: 0.3s;
 }
 .nav.intro {
-  -webkit-transition: opacity ease-in-out 0s;
-  -o-transition: opacity ease-in-out 0s;
-  transition: opacity ease-in-out 0s;
+  -webkit-transition: opacity ease-in-out 3s;
+  -o-transition: opacity ease-in-out 3s;
+  transition: opacity ease-in-out 3s;
 }
 .nav.in {
   opacity: 1;
@@ -113,9 +113,9 @@ body {
 .expr.intro,
 .github.intro,
 .blog.intro {
-  -webkit-transition: opacity ease-in-out 0s;
-  -o-transition: opacity ease-in-out 0s;
-  transition: opacity ease-in-out 0s;
+  -webkit-transition: opacity ease-in-out 3s;
+  -o-transition: opacity ease-in-out 3s;
+  transition: opacity ease-in-out 3s;
 }
 .profile.in,
 .expr.in,
@@ -307,9 +307,9 @@ body {
     transition: 0.3s;
   }
   .github-blog-separator.intro {
-    -webkit-transition: opacity ease-in-out 0s;
-    -o-transition: opacity ease-in-out 0s;
-    transition: opacity ease-in-out 0s;
+    -webkit-transition: opacity ease-in-out 3s;
+    -o-transition: opacity ease-in-out 3s;
+    transition: opacity ease-in-out 3s;
   }
   .github-blog-separator.in {
     opacity: 1;
