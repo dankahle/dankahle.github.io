@@ -10,7 +10,7 @@
 @nav-height-sm: 50px;
 @nav-plus: 10px;
 @purple: #8316ab;
-@color-heading: @purple;
+@color-heading: desaturate(@purple, 10%);
 
 @introSpeed: 0s;// this speed is mirrored in js: site.js
 .introTrans() {
@@ -192,7 +192,10 @@ body {
       text-align: center;
       font-size: 18px;
       a:not(:last-of-type) {
-         margin-right: 7%;
+         margin-right: 4%;
+         @media (min-width: @screen-sm) {
+            margin-right: 7%;
+         }
       }
    }
    .qrcode-profile {
@@ -350,7 +353,7 @@ body {
    }
    .title {
       display:block;
-      font-size: 20px;
+      font-size: 18px;
       white-space: nowrap;
       @media (min-width: @screen-sm) {
          display: inline-block;
@@ -360,6 +363,7 @@ body {
    .city-date-wrapper {
       display: inline-block;
       white-space: nowrap;
+      margin-bottom: 4px;
    }
    .city, .dates {
       font-size: 15px;
@@ -395,6 +399,11 @@ body {
       &.ng-hide {
          opacity: 0;
       }
+   }
+   .skills {
+      margin-top: 4px;
+      font-size: 15px;
+      color: desaturate(green, 20%);
    }
 }
 

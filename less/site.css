@@ -177,7 +177,7 @@ body {
 }
 .profile .heading {
   font-size: 22px;
-  color: #8316ab;
+  color: #7f20a1;
   text-align: center;
   margin: 18px 0 10px;
 }
@@ -194,7 +194,12 @@ body {
   font-size: 18px;
 }
 .profile .social-links a:not(:last-of-type) {
-  margin-right: 7%;
+  margin-right: 4%;
+}
+@media (min-width: 768px) {
+  .profile .social-links a:not(:last-of-type) {
+    margin-right: 7%;
+  }
 }
 .profile .qrcode-profile {
   display: block;
@@ -247,7 +252,7 @@ body {
   .view-heading {
     display: block;
     font-size: 22px;
-    color: #8316ab;
+    color: #7f20a1;
     text-align: center;
   }
   .profile,
@@ -318,7 +323,7 @@ body {
 }
 .dk-expr .title {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   white-space: nowrap;
 }
 @media (min-width: 768px) {
@@ -330,6 +335,7 @@ body {
 .dk-expr .city-date-wrapper {
   display: inline-block;
   white-space: nowrap;
+  margin-bottom: 4px;
 }
 .dk-expr .city,
 .dk-expr .dates {
@@ -374,6 +380,11 @@ body {
 }
 .dk-expr .summary.ng-hide {
   opacity: 0;
+}
+.dk-expr .skills {
+  margin-top: 4px;
+  font-size: 15px;
+  color: #0d730d;
 }
 .article {
   margin-top: 18px;

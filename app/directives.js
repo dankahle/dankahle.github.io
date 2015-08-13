@@ -27,6 +27,7 @@ app.directive('dkExpr', function () {
                   '</div> ' +
                   '<div class="desc" ng-hide="curSummary == $index" ng-bind-html="job.desc"></div> ' +
                   '<div class="summary" ng-show="curSummary == $index" ng-bind-html="job.summary"></div> ' +
+                  '<div class="skills">{{job.skills}}</div>' +
                '</div>',
       link: function ($scope, elem, attr) {
 
