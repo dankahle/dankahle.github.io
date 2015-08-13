@@ -57,7 +57,7 @@ var jobs = [
       skills: 'angular, jquery, karma, jasmine, grunt, gulp, git, github'
    },
    {
-      title: 'Timeout',
+      title: 'timeout',
       city: 'San Diego, CA',
       dates: 'Sep 2013 - Jun 2015 (1yr 9mo)',
       desc: 'Timeout to learn new technologies, moved from pc/.net to mac/mean stack',
@@ -129,10 +129,10 @@ var jobs = [
       skills: 'Asp.net1, SqlServer2000, multi-browser'
    },
    {
-      title: 'Timeout',
+      title: 'timeout',
       city: 'Portland, OR',
       dates: 'Jun 2001 - Mar 2003 (2yr 2mo)',
-      desc: 'Timeout to learn new technologies.',
+      desc: 'Timeout to learn new technologies, moved from windows apps to .net web apps.',
       summary: 'Took time off to learn new technologies, moved from Microsoft Windows programming to Microsoft .NET web programming.',
       skills: 'C#, Asp.net1, Sql Server 2000, HTML, CSS, javascript'
    },
@@ -148,36 +148,91 @@ var jobs = [
 
 var repos = [
    {
-      title: 'dk-modal github',
-      url: 'https://github.com/dankahle/dk-modal',
-      desc: 'An angular module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
-   },
-   {
       title: 'dk-modal',
       url: 'https://github.com/dankahle/dk-modal',
       desc: 'An angular module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
    },
    {
-      title: 'dk-modal',
-      url: 'https://github.com/dankahle/dk-modal',
-      desc: 'An angular module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
+      title: 'github.io (this site)',
+      url: 'https://github.com/dankahle/dankahle.github.io',
+      desc: 'A website to show off my skills, jobs, projects and blogs. Its main claim to fame is its ability to morph nicely for phone/portrait/landscape/widescreen, no small task. Animating the media changes without having content flashing was challenging as well.'
    },
 ];
 
 var blogs = [
    {
-      title: 'dk-modal blog',
-      url: 'https://github.com/dankahle/dk-modal',
-      desc: 'An angular module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
+      title: 'Filling up rest of open space between floating divs',
+      url: 'http://dankahle-dev.blogspot.com/2015/06/filling-up-rest-of-open-space-between.html',
+      desc: 'This was the most amazing css discovery of the year. I used to be a big table guy, partially cause it lined things up, but also for its ability to fill in the space between things. Turns out divs will do that too, but there\'s a trick.'
    },
    {
-      title: 'dk-modal',
-      url: 'https://github.com/dankahle/dk-modal',
-      desc: 'An angular module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
+      title: 'Restangular vs the repository pattern',
+      url: "http://dankahle-dev.blogspot.com/2015/05/restangular-vs-repository-pattern.html",
+      desc: "Restangular replaces the repository pattern nicely, but only so much so."
    },
    {
-      title: 'dk-modal',
-      url: 'https://github.com/dankahle/dk-modal',
-      desc: 'An angular module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
+      title: "Hashbang vs html5Mode in single-page applications",
+      url: "http://dankahle-dev.blogspot.com/2015/05/hashbang-vs-html5mode-in-single-page.html",
+      desc: "There are subtle differences between hashbang and html5mode applications. The dual querystring capability of hashbang urls can be key."
+   },
+   {
+      title: "Comparing the different object clone methods",
+      url: "http://dankahle-dev.blogspot.com/2015/05/comparing-different-object-clone-methods.html",
+      desc: "A comparison of javascript object cloning techniques."
+   },
+   {
+      title: "Hooks with kareem",
+      url: "http://dankahle-dev.blogspot.com/2015/04/hooks-with-kareem.html",
+      desc: "Nobody hooks like Kareem :). This is what mongoose uses for its pre/post hooks."
+   },
+   {
+      title: "Requiring async modules in node",
+      url: "http://dankahle-dev.blogspot.com/2015/03/requiring-async-modules-in-node.html",
+      desc: "A strategy for requiring async modules in node, i.e. modules that won't be ready right off the bat. A database is something that comes to mind, you need access, but must wait for it's connection. Thankfully mongoose caches the requests until it's ready."
+   },
+   {
+      title: "Readable file object stream with a through stream",
+      url: "http://dankahle-dev.blogspot.com/2015/03/readable-file-object-stream-with.html",
+      desc: "An attempt to simulate how gulp works, with its vinyl objects and through streams."
+   },
+   {
+      title: "Node's xmas tree vs asnyc series",
+      url: "http://dankahle-dev.blogspot.com/2015/03/nodes-xmas-tree-vs-asnyc-series.html",
+      desc: "I just can't get enough of async.js. I used to think it was all promised based, but I stand corrected, it's lean and mean async code."
+   },
+   {
+      title: "Animating form messages",
+      url: "http://dankahle-dev.blogspot.com/2015/02/animating-form-messages.html",
+      desc: "A strategy for animating angular form messages."
+   },
+   {
+      title: "Async promise issues with jasmine",
+      url: "http://dankahle-dev.blogspot.com/2015/01/async-promise-issues-with-jasmine.html",
+      desc: "There's a trick for dealing with async promises in jasmine tests."
+   },
+   {
+      title: "Copy to clipboard button",
+      url: "http://dankahle-dev.blogspot.com/2015/01/copy-to-clipboard-button.html",
+      desc: "How to implement a \"copy the clipboard\" button."
+   },
+   {
+      title: "Gulp: comparing file watch options",
+      url: "http://dankahle-dev.blogspot.com/2014/11/gulp-comparing-file-watch-options.html",
+      desc: "A comparison of the different gulp file watch options."
+   },
+   {
+      title: "gulp-watch vs gulp.watch",
+      url: "http://dankahle-dev.blogspot.com/2014/11/gulp-watch-vs-gulpwatch.html",
+      desc: "A comparison of gulp-watch to gulp.watch."
+   },
+   {
+      title: "Angular and Polymer, a first attempt",
+      url: "http://dankahle-dev.blogspot.com/2014/11/angular-and-polymer-first-attempt.html",
+      desc: "An attempt to integrate polymer with angular1. It doesn't go so well, as polymer only affords one-way data binding. Surely angular2 won't have this issue."
+   },
+   {
+      title: "The lowdown on Ecmascript 6, and getting up on Google's Traceur compiler",
+      url: "http://dankahle-dev.blogspot.com/2014/10/the-lowdown-on-ecmascript-6-and-getting.html",
+      desc: "Getting setup with Google's Traceur to work with Ecmascript 6."
    },
 ];

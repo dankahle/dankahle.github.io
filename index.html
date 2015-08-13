@@ -84,8 +84,8 @@
    <div class="view-heading visible-lg-block">github</div>
 
    <article class="article" ng-repeat="item in repos">
-      <a class="title" href="{{item.url}}" target="_blank">{{item.title}}</a>
-      <div class="desc">{{item.desc}}</div>
+      <a class="title" href="{{item.url}}" target="_blank" ng-bind-html="item.title"></a>
+      <div class="desc" ng-bind-html="item.desc"></div>
    </article>
    <br>
 </div>
@@ -95,8 +95,8 @@
 <div class="blog" >
    <div class="view-heading visible-lg-block">blog</div>
    <article class="article" ng-repeat="item in blogs">
-      <a class="title" href="{{item.url}}" target="_blank">{{item.title}}</a>
-      <div class="desc">{{item.desc}}</div>
+      <a class="title" href="{{item.url}}" target="_blank" ng-bind-html="item.title"></a>
+      <div class="desc" ng-bind-html="item.desc"></div>
    </article>
    <br>
 </div>
