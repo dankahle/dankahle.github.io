@@ -12,7 +12,7 @@
 @purple: #8316ab;
 @color-heading: @purple;
 
-@introSpeed: 3s;// this speed is mirrored in js: site.js
+@introSpeed: 0s;// this speed is mirrored in js: site.js
 .introTrans() {
    -webkit-transition: opacity ease-in-out @introSpeed;
    -o-transition: opacity ease-in-out @introSpeed;
@@ -337,6 +337,7 @@ body {
 }
 
 .dk-expr {
+   @title-city-margin: 24px;
    @tranSpeed: .3s;
    .trans() {
       -webkit-transition: ease-in @tranSpeed;
@@ -348,7 +349,27 @@ body {
       margin-top: 10px;
    }
    .title {
+      display:block;
       font-size: 20px;
+      white-space: nowrap;
+      @media (min-width: @screen-sm) {
+         display: inline-block;
+         margin-right: @title-city-margin;
+      }
+   }
+   .city-date-wrapper {
+      display: inline-block;
+      white-space: nowrap;
+   }
+   .city, .dates {
+      font-size: 15px;
+      color: @link-color;
+   }
+   .city {
+      margin-right: 15px;
+      @media (min-width: @screen-sm) {
+         margin-right: @title-city-margin;
+      }
    }
    .desc {
       transform: translateY(0%);

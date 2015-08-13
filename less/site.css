@@ -42,9 +42,9 @@ body {
   transition: 0.3s;
 }
 .nav.intro {
-  -webkit-transition: opacity ease-in-out 3s;
-  -o-transition: opacity ease-in-out 3s;
-  transition: opacity ease-in-out 3s;
+  -webkit-transition: opacity ease-in-out 0s;
+  -o-transition: opacity ease-in-out 0s;
+  transition: opacity ease-in-out 0s;
 }
 .nav.in {
   opacity: 1;
@@ -113,9 +113,9 @@ body {
 .expr.intro,
 .github.intro,
 .blog.intro {
-  -webkit-transition: opacity ease-in-out 3s;
-  -o-transition: opacity ease-in-out 3s;
-  transition: opacity ease-in-out 3s;
+  -webkit-transition: opacity ease-in-out 0s;
+  -o-transition: opacity ease-in-out 0s;
+  transition: opacity ease-in-out 0s;
 }
 .profile.in,
 .expr.in,
@@ -302,9 +302,9 @@ body {
     transition: 0.3s;
   }
   .github-blog-separator.intro {
-    -webkit-transition: opacity ease-in-out 3s;
-    -o-transition: opacity ease-in-out 3s;
-    transition: opacity ease-in-out 3s;
+    -webkit-transition: opacity ease-in-out 0s;
+    -o-transition: opacity ease-in-out 0s;
+    transition: opacity ease-in-out 0s;
   }
   .github-blog-separator.in {
     opacity: 1;
@@ -317,7 +317,32 @@ body {
   margin-top: 10px;
 }
 .dk-expr .title {
+  display: block;
   font-size: 20px;
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .dk-expr .title {
+    display: inline-block;
+    margin-right: 24px;
+  }
+}
+.dk-expr .city-date-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+}
+.dk-expr .city,
+.dk-expr .dates {
+  font-size: 15px;
+  color: #337ab7;
+}
+.dk-expr .city {
+  margin-right: 15px;
+}
+@media (min-width: 768px) {
+  .dk-expr .city {
+    margin-right: 24px;
+  }
 }
 .dk-expr .desc {
   transform: translateY(0%);

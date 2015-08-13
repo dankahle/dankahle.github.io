@@ -41,9 +41,11 @@ var skills = [
 
 var jobs = [
 	{
-		title: 'title one title one title one title one title one ',
-		desc: 'desc one',
-		summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.'
+		title: 'dk-modal, github.io site',
+      city: 'San Diego, CA',
+      dates: 'Jul 2015 - Present',
+		desc: 'Create an angular modal dialog component, the dk-modal. Create a personal github.io personal website.',
+		summary: 'Created an angular modal dialog component for myself and the community. Wanted a modal that could be positioned anywhere and that could take a header/body and a ok, ok/cancel, yes/no buttoned footer that fired off ok/cancel events. It turned out nicely.<br>Created a personal github.io website to show my skills, jobs, github projects and blog articles. '
 	},
    {
       title: 'title two',
