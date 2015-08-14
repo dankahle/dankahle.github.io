@@ -350,10 +350,9 @@ body {
     margin-right: 24px;
   }
 }
-.dk-expr .desc {
-  transform: translateY(0%);
-}
 .dk-expr .desc.ng-hide-add {
+  -webkit-transition: 0s;
+  -o-transition: 0s;
   transition: 0s;
 }
 .dk-expr .desc.ng-hide-remove {
@@ -368,9 +367,10 @@ body {
   -webkit-transition: ease-in 0.3s;
   -o-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
-  transform: translateY(0%);
 }
 .dk-expr .summary.ng-hide-add {
+  -webkit-transition: 0s;
+  -o-transition: 0s;
   transition: 0s;
 }
 .dk-expr .summary.ng-hide-remove {
