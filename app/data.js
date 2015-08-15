@@ -57,11 +57,11 @@ var jobs = [
       skills: 'angular, jquery, karma, jasmine, grunt, gulp, git, github'
    },
    {
-      title: 'timeout',
+      title: 'Technology Change',
       city: 'San Diego, CA',
       dates: 'Sep 2013 - Jun 2015 (1yr 9mo)',
-      desc: 'Timeout to learn new technologies, moved from pc/.net to mac/mean stack',
-      summary: 'Took time off to learn new technologies, moved from pc/.net to mac/mean stack. Looked at react/ember/angular, decided to go with angular. Fell in love with node, ditched my pc for a mac and don’t even try to take webstorm/git from me. Looked into the future with es6/polymer/web components. Started contributing to github projects.',
+      desc: 'Took time off to learn new technologies, moved from .NET web apps to the MEAN stack.',
+      summary: 'Took time off to learn new technologies, moved from .NET web apps to the MEAN stack. Looked at react/ember/angular, decided to go with angular. Fell in love with node, ditched my pc for a mac and don’t even try to take webstorm/git from me. Looked into the future with es6/polymer/web components. Started contributing to github projects.',
       skills: 'angular, jquery, ui-router, restangular, polymer, sass/less, lodash, async, node, express, mongoose, mongodb, karma/jasmine, mocha/chai/sinon, webstorm, npm/bower, gulp/grunt, git/github, balsamiq, aws, heroku, mongolab'
    },
    {
@@ -129,10 +129,10 @@ var jobs = [
       skills: 'Asp.net1, SqlServer2000, multi-browser'
    },
    {
-      title: 'timeout',
+      title: 'Technology Change',
       city: 'Portland, OR',
       dates: 'Jun 2001 - Mar 2003 (2yr 2mo)',
-      desc: 'Timeout to learn new technologies, moved from windows apps to .net web apps.',
+      desc: 'Took time off to learn new technologies, moved from windows apps to .net web apps.',
       summary: 'Took time off to learn new technologies, moved from Microsoft Windows programming to Microsoft .NET web programming.',
       skills: 'C#, Asp.net1, Sql Server 2000, HTML, CSS, javascript'
    },
