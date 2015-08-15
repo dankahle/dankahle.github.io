@@ -39,17 +39,16 @@ app.controller('bodyCtrl', function ($scope, $compile, $timeout) {
    $intro.addClass('intro');
 
 
-// this doesn't always happen
    $profile.on('transitionend webkitTransitionEnd', function() {
-      log('profile  transitionend')
+      //log('profile  transitionend')
       $profile.off('transitionend webkitTransitionEnd');
       $intro.removeClass('intro');
    });
 
-   // safety net in case transitionend doesn't happen
+// the above transitionend doesn't always happen, notably when they click on menu before intro is done, sparking another intro length wait. This is our safety net to make sure intro gets pulled
    var introTransSpeed = 4000;
    setTimeout(function() {
-      log('js remove intro')
+      //log('js remove intro')
       $intro.removeClass('intro');
    }, introTransSpeed);
 
