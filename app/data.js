@@ -157,6 +157,16 @@ var repos = [
       url: 'https://github.com/dankahle/dankahle.github.io',
       desc: 'A website to show off my skills, jobs, projects and blogs. Its main claim to fame is its ability to morph nicely for phone/portrait/landscape/widescreen, no small task. Animating the media changes without having content flashing was challenging as well.'
    },
+   {
+      title: 'passport-local-dk',
+      url: 'https://github.com/dankahle/passport-local-dk',
+      desc: 'Four examples of how to handle username/password authetication. Two roll-your-own solutions and 2 solutions using passport/passport-local, with one of each using passport-local-mongoose. Login pages are in angular (instead of server side).'
+   },
+   {
+      title: 'passport-oauth-dk',
+      url: 'https://github.com/dankahle/passport-oauth-dk',
+      desc: 'An example of using passport for an oauth login via facebook and google.'
+   },
 ];
 
 var blogs = [
