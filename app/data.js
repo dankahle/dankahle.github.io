@@ -3,39 +3,31 @@
 var skills = [
    {
       title: 'front end',
-      desc: 'HTML5, ECMAScript6, CSS3, AngularJS, Polymer, SASS/LESS, Bootstrap3,  jQuery, lodash, async'
+      desc: 'HTML5, es6, TypeScript, CSS3, SCSS/LESS, Material, Bootstrap,  jQuery, Lodash'
    },
    {
-      title: 'angular',
-      desc: 'UI-Router, Restangular'
+      title: 'angular 1.5',
+      desc: 'cg-angular, UI-Router, UI-Bootstrap, Bootstrap, Karma/Jasmine'
    },
    {
-      title: 'back-end service',
-      desc: 'Node/Express/MongoDB native driver/Mongoose, WebAPI2, WCF, Entity Framework6'
+      title: 'angular 5',
+      desc: '@angular/cli, Typescript, Rxjs, Material, @angular/flex-layout, Karma/Jasmine'
    },
    {
-      title: 'server-side web application',
-      desc: 'Asp.net MVC5, Asp.net'
+      title: 'node 6.9.2',
+      desc: 'Node, Express, Mongoose, Q, Lodash, Mocha/Chai/Sinon'
    },
    {
-      title: 'database',
-      desc: 'MongoDB, Sql Server, Amazon (S3/EC2/RDS), Azure (Storage/Sql Database)'
-   },
-   {
-      title: 'test',
-      desc: 'Karma/Jasmine/Protractor, Mocha/Chai/Sinon, MSTest, xUnit, MOQ'
+      title: 'mongoDB 3.2',
+      desc: 'MongoDB, MongoDB node native driver, Mongoose'
    },
    {
       title: 'tools',
-      desc: 'WebStorm, npm/bower, gulp/grunt, git, github, yeoman, VisualStudio, TFS, Subversion, Balsamiq'
-   },
-   {
-      title: 'cloud',
-      desc: 'Amazon Web Services, Microsoft Azure, Heroku, MongoLab'
+      desc: 'Macbook pro, WebStorm, NPM/Bower, Gulp/Grunt, Git, Github, Stash/Bitbucket, Jira, Scrum'
    },
    {
       title: 'patterns',
-      desc: 'MVC, MVVM, module/closure/AMD, Promises, IoC, Repository, GoF, Enterprise Architecture, Refactoring'
+      desc: 'MVC, MVVM, module/closure/AMD, Promise/Observable, IoC, Repository, GoF, Enterprise Architecture, Refactoring'
    }
 ];
 
