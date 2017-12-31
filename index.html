@@ -17,8 +17,6 @@
              ng-click="changeView('expr')">experience</a></li>
       <li><a href="" ng-class="{active: view == 'github'}"
              ng-click="changeView('github')">github</a></li>
-      <li><a href="" ng-class="{active: view == 'blog'}"
-             ng-click="changeView('blog')">blog</a></li>
       <a href="" class="qrcode-nav hidden-xs" dk-modal-trigger=".qrcodeModal" data-width="150px"></a>
    </ul>
 </div>
@@ -65,9 +63,7 @@
       <div class="title">
          <div class="social-links">
             <a href="https://github.com/dankahle" target="_blank">github</a>
-            <a href="http://dankahle-dev.blogspot.com/" target="_blank">blog</a>
-            <a href="https://www.linkedin.com/pub/dan-kahle/82/a8a/576" target="_blank">linkedin</a>
-            <a href="http://bit.ly/1Inb65s" target="_blank">resume</a>
+            <a href="http://bit.ly/2zuojQ6" target="_blank">resume</a>
          </div>
       </div>
    </article>
@@ -79,13 +75,13 @@
    <div class="view-heading visible-lg-block">experience</div>
 
    <article class="dk-expr" ng-repeat="job in jobs">
-      <a class="title" href="" ng-click="toggle = !toggle">{{job.title}}</a>
+      <span class="title" ng-if="!job.link">{{job.title}}</span>
+      <a class="title" ng-if="job.link" href="{{job.link}}" target="_blank">{{job.title}}</a>
       <div class="city-date-wrapper">
          <span class="city">{{job.city}}</span>
          <span class="dates">{{job.dates}}</span>
       </div>
-      <div class="desc" ng-hide="toggle" ng-bind-html="job.desc"></div>
-      <div class="summary" ng-show="toggle" ng-bind-html="job.summary"></div>
+      <div class="desc" ng-bind-html="job.desc"></div>
       <div class="skills">{{job.skills}}</div>
    </article>
    <br>
@@ -95,18 +91,6 @@
    <div class="view-heading visible-lg-block">github</div>
 
    <article class="article" ng-repeat="item in repos">
-      <a class="title" href="{{item.url}}" target="_blank" ng-bind-html="item.title"></a>
-
-      <div class="desc" ng-bind-html="item.desc"></div>
-   </article>
-   <br>
-</div>
-
-<div class="github-blog-separator"></div>
-
-<div class="blog">
-   <div class="view-heading visible-lg-block">blog</div>
-   <article class="article" ng-repeat="item in blogs">
       <a class="title" href="{{item.url}}" target="_blank" ng-bind-html="item.title"></a>
 
       <div class="desc" ng-bind-html="item.desc"></div>

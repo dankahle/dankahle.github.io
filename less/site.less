@@ -42,6 +42,10 @@ body {
    background-size: cover;
 }
 
+.stuff {
+
+}
+
 .filter {
    position: fixed;
    top: 0;
@@ -212,6 +216,7 @@ body {
    }
 }
 
+
 .expr {
 
 }
@@ -231,10 +236,6 @@ body {
    }
    .profile, .expr, .github, .blog {
       padding-top: @nav-height-sm + @nav-plus;
-   }
-
-   .github-blog-separator {
-      display: none;
    }
 
 }
@@ -301,39 +302,10 @@ body {
    .github {
       left: 100% - @width;
       width: @width;
-      height: 49%;
+      height: 100%;
       .view-heading {
          top: 0px;
          left: 100% - @width + 2;
-      }
-   }
-
-   .blog {
-      top: 51%;
-      left: 100% - @width;
-      width: @width;
-      height: 49%;
-      .view-heading {
-         top: 50%;
-         left: 100% - @width + 2;
-         //border-top: 1px solid #555;
-      }
-   }
-
-   .github-blog-separator {
-      display: block;
-      position: fixed;
-      top: 50%;
-      left: 100% - @width + 2;
-      width: @width - 4;
-      border-top: 1px solid #333;
-      opacity: 0;
-      .trans;
-      &.intro {
-         .introTrans;
-      }
-      &.in {
-         opacity: 1;
       }
    }
 
@@ -421,7 +393,4 @@ body {
    }
 
 }
-
-
-
 

@@ -11,19 +11,17 @@ app.controller('bodyCtrl', function ($scope, $compile, $timeout) {
 
 // globals
    log = console.log.bind(console);
-   $body = $(document.body);
-   media = {sm: 768, md: 992, lg: 1200};
-   $profile = $('.profile');
-   $expr = $('.expr');
-   $github = $('.github');
-   $blog = $('.blog');
-   $filter = $('.filter');
-   $nav = $('.nav');
-   $github_blog_separator = $('.github-blog-separator');
+   var $body = $(document.body);
+   var media = {sm: 768, md: 992, lg: 1200};
+   var $profile = $('.profile');
+   var $expr = $('.expr');
+   var $github = $('.github');
+   var $filter = $('.filter');
+   var $nav = $('.nav');
 
 
-   getMedia = function() {
-      var width = innerWidth;
+   var getMedia = function() {
+      var width = window.innerWidth;
       if (width >= media.lg)
          return 'lg';
       if (width >= media.md)
@@ -35,7 +33,7 @@ app.controller('bodyCtrl', function ($scope, $compile, $timeout) {
 
    };
 
-   var $intro = $('.nav, .github-blog-separator, .profile, .expr, .github, .blog');
+   var $intro = $('.nav, .profile, .expr, .github');
    $intro.addClass('intro');
 
 
@@ -56,7 +54,6 @@ app.controller('bodyCtrl', function ($scope, $compile, $timeout) {
    $scope.skills = skills;
    $scope.jobs = jobs;
    $scope.repos = repos;
-   $scope.blogs = blogs;
 
    var lastMedia, curMedia;
 
@@ -72,26 +69,22 @@ app.controller('bodyCtrl', function ($scope, $compile, $timeout) {
          curMedia = media;
          if (!lastMedia) { // initial entry
             $views.push($nav);
-            $views.push($github_blog_separator);
-
 
             if (_.contains(['xs', 'sm'], curMedia)) {
                $scope.view = 'profile';
                $views.push($profile);
-               $([$expr[0], $github[0], $blog[0]]).hide().removeClass('in');// leave profile showing
+               $([$expr[0], $github[0]]).hide().removeClass('in');// leave profile showing
             }
             else if(curMedia == 'md') {
                $scope.view = 'expr';
-               $([$github[0], $blog[0]]).hide().removeClass('in');
+               $([$github[0]]).hide().removeClass('in');
                $views.push($profile);
                $views.push($expr);
             }
             else if(curMedia == 'lg') {
-               //$views = [$profile, $expr, $github, $blog];
                $views.push($profile);
                $views.push($expr);
                $views.push($github);
-               $views.push($blog);
             }
          }
          else {
@@ -105,7 +98,7 @@ app.controller('bodyCtrl', function ($scope, $compile, $timeout) {
                }
             }
             else if (lastMedia == 'md' && curMedia == 'lg') {
-               [$expr, $github, $blog].forEach((function (v) {
+               [$expr, $github].forEach((function (v) {
                   if (!v.hasClass('in'))
                      $views.push(v);
                }))
@@ -114,12 +107,12 @@ app.controller('bodyCtrl', function ($scope, $compile, $timeout) {
                if (!$scope.view) {
                   $scope.view = 'expr';
                   $views.push($expr);
-                  $([$github[0], $blog[0]]).hide().removeClass('in');
+                  $([$github[0]]).hide().removeClass('in');
                }
                else {
                   // can't be profile cause have a view and went from md to lg with it
                   // must be expr/github/blog, need to keep which one and hide the other two
-                  [$expr, $github, $blog].forEach(function(v) {
+                  [$expr, $github].forEach(function(v) {
                      if(v.selector != '.' + $scope.view)
                         v.hide().removeClass('in');
                   })
@@ -140,7 +133,7 @@ app.controller('bodyCtrl', function ($scope, $compile, $timeout) {
          if ($views.length) {
             $views.forEach(function (v) {
                // can't have element display style on nav or separator
-               if(v != $nav && v != $github_blog_separator)
+               if(v != $nav)
                   v.show();
             })
             setTimeout(function () {
@@ -163,7 +156,7 @@ app.controller('bodyCtrl', function ($scope, $compile, $timeout) {
          if (curMedia != 'md') {
             $profile.hide().removeClass('in');
          }
-         $([$expr[0], $github[0], $blog[0]]).hide().removeClass('in');
+         $([$expr[0], $github[0]]).hide().removeClass('in');
          var $view = $('.' + view);
          $view.show();
 

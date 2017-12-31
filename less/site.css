@@ -223,9 +223,6 @@ body {
   .blog {
     padding-top: 60px;
   }
-  .github-blog-separator {
-    display: none;
-  }
 }
 @media (min-width: 992px) {
   .nav {
@@ -278,41 +275,11 @@ body {
   .github {
     left: 68%;
     width: 32%;
-    height: 49%;
+    height: 100%;
   }
   .github .view-heading {
     top: 0px;
     left: 70%;
-  }
-  .blog {
-    top: 51%;
-    left: 68%;
-    width: 32%;
-    height: 49%;
-  }
-  .blog .view-heading {
-    top: 50%;
-    left: 70%;
-  }
-  .github-blog-separator {
-    display: block;
-    position: fixed;
-    top: 50%;
-    left: 70%;
-    width: 28%;
-    border-top: 1px solid #333;
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .github-blog-separator.intro {
-    -webkit-transition: opacity ease-in-out 3s;
-    -o-transition: opacity ease-in-out 3s;
-    transition: opacity ease-in-out 3s;
-  }
-  .github-blog-separator.in {
-    opacity: 1;
   }
 }
 .dk-expr {
