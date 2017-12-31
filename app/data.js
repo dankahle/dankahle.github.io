@@ -53,7 +53,7 @@ var jobs = [
       city: 'San Diego, CA',
       dates: 'Dec 2011 - Sep 2013 (1yr 10mo)',
       desc: 'Enhanced LPL’s BranchNet, a public-facing financial advisor website.',
-      skills: 'jQuery, Asp.net MVC3, Asp.net4, WCF, Sql Server2008, multi-browser'
+      skills: 'Asp.net MVC3, Asp.net4, jQuery,  WCF, Sql Server2008'
    },
    {
       title: 'Learning.com',
