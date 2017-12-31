@@ -124,7 +124,7 @@ var repos = [
    {
       title: 'dk-contacts',
       url: 'https://github.com/dankahle/dk-contacts',
-      desc: 'A duplication of Google\'s "Contacts" site as an exercise in using the latest mean stack technologies: angular 5, node 8.9, mongo 3.4. It\'s comprised of 3 repos (below) a common node project, backend (node/express/mongodb) and frontend (angular 5/material/flex-layout).'
+      desc: 'This project is a duplication of Google\'s "Contacts" site as an exercise in using the latest mean stack technologies: angular 5, node 8.9, mongo 3.4. It\'s comprised of 3 repos (below): a common node project, backend rest api (node/express/mongodb), and frontend UI (angular 5/material/flex-layout).'
    },
    {
       title: 'contacts-fe',
