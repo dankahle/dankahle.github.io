@@ -124,37 +124,37 @@ var repos = [
    {
       title: 'dk-contacts',
       url: 'https://github.com/dankahle/dk-contacts',
-      desc: 'An reproduction of google Contacts using angular5/node 8/mongo 3.4.'
+      desc: 'A duplication of Google\'s "Contacts" site as an exercise in using the latest MEAN stack technologies: angular 5, node 8.9, mongo 3.4. It\'s comprised of 3 repositories (below) a common node project, backend (node/express/mongodb) and frontend (angular 5/material/flex-layout).'
    },
    {
       title: 'contacts-fe',
       url: 'https://github.com/dankahle/contacts-fe',
-      desc: 'dk-contacts front end.'
+      desc: 'This is the angular 5/material/flex-layout frontend of the dk-contacts project. I went with global state management for global state visibility with an observable pub/sub for dealing with changes that required broadcasting to other components. flex-layout was incredibly handy for positioning and responsiveness.'
    },
    {
       title: 'contacts-be',
       url: 'https://github.com/dankahle/contacts-be',
-      desc: 'dk-contacts back end.'
+      desc: 'The backend rest api for the contacts-fe project. This api supports both login/register/authentication and users/contacts apis. Json schema is used for post/put body validation, and renders mongoose unrequired. The schemas also doubled use for redoc\'s json schema based documentation. MongoDB\'s node native driver was very easy to work with and utilized the same api as mongo\'s client. '
    },
    {
       title: 'node-base',
       url: 'https://github.com/dankahle/node-base',
-      desc: 'Node base project for common node code.'
+      desc: 'A node common project for reusable node code across all node projects. This pattern affords consistency between your node projects and your frontends as well, as the standard error messages and codes support reusable UI error handling.'
    },
    {
       title: 'redux2',
       url: 'https://github.com/dankahle/redux2',
-      desc: 'A comparison between straight angular 4 and angular 4 on redux'
+      desc: 'A comparison between straight angular 4 and angular 4 on redux. My first foray into redux was an uncomfortable experience. Redux is orthogonal to angular in many respects. It was hard to discern what enterprise angular would look like as opposed to angular/redux (my first enterprise angular 4 app). This was an attempt to see the two side-by-side and how redux could be done better.'
    },
    {
       title: 'dk-modal',
       url: 'https://github.com/dankahle/dk-modal',
-      desc: 'An angular module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
+      desc: 'An angular 1 module for creating modal windows. The modal can be any size and placed anywhere on screen (center, viewport offset, target element offset). Dual purposed for general messages and data edit popups with separate css settings for each mode, say slower/darker for messages, faster/lighter for editing.'
    },
    {
       title: 'github.io (this site)',
       url: 'https://github.com/dankahle/dankahle.github.io',
-      desc: 'A website to show off my skills, jobs, and projects. Its main claim to fame is its ability to morph nicely for phone/portrait/landscape/widescreen, no small task. Animating the media changes without having content flashing was challenging as well.'
+      desc: 'An angular 1 website to show my skills, jobs, and github projects. It\'s responsive from phone to widescreen, and involves considerable animation.'
    },
    {
       title: 'passport-local-dk',
