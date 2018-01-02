@@ -3,19 +3,19 @@
 var skills = [
    {
       title: 'front end',
-      desc: 'HTML5, es5/6, TypeScript, CSS3, SCSS/LESS, Material, Bootstrap,  jQuery, Lodash'
+      desc: 'TypeScript, ES6, HTML5, SCSS, Material, Bootstrap,  Lodash'
    },
    {
       title: 'angular 1.5',
-      desc: 'cg-angular, UI-Router, UI-Bootstrap, Bootstrap, Karma/Jasmine'
+      desc: 'UI-Router, UI-Bootstrap, Bootstrap, cg-angular, Karma/Jasmine'
    },
    {
       title: 'angular 5',
-      desc: '@angular/cli, Typescript, Rxjs, Material, @angular/flex-layout, Karma/Jasmine'
+      desc: 'Material, @angular/cli, @angular/flex-layout, Rxjs, Karma/Jasmine'
    },
    {
       title: 'node 6.9.2',
-      desc: 'Node, Express, Mongoose, Q, Lodash, Mocha/Chai/Sinon'
+      desc: 'Node, Express, Lodash, Mocha/Chai'
    },
    {
       title: 'mongoDB 3.2',
@@ -27,7 +27,7 @@ var skills = [
    },
    {
       title: 'patterns',
-      desc: 'MVC, MVVM, module/closure/AMD, Promise/Observable, IoC, Repository, GoF, Enterprise Architecture, Refactoring'
+      desc: 'MVC, MVVM, module/closure/AMD, IoC, Repository, GoF, Enterprise Architecture, Refactoring'
    }
 ];
 
@@ -61,7 +61,6 @@ var jobs = [
       city: 'Portland, OR',
       dates: 'Dec 2010 - Jun 2011 (7mo)',
       desc: 'Enhanced learning.com\'s K through 12 educational webite.',
-      summary: 'Enhanced Learning.com’s educational multi-browser website for K through 12 school grades. The public site was Flash based for lesson content, with navigation/information UI features based on Asp.net, jQuery, and Ajax. Worked in the UI, business/data layers, and database. Refactored the business/data layers for better readability and efficiency. Researched several project strategies for addition into the Backlog. Mentored new engineers when possible. Worked with a team of 7 software developers, 4 database developers, 3 QA persons. Projects were performed in Scrum sprints with frequent releases.',
       skills: 'Asp.net4, jQuery, WCF, Entity Framework, Sql Server2008, multi-browser, Scrum'
    },
    {
@@ -69,8 +68,7 @@ var jobs = [
       link: 'http://www.intel.com',
       city: 'Portland, OR',
       dates: 'Jan 2010 - Nov 2010 (11mo)',
-      desc: 'Created Intel\'s iCost global financial cost calculator.',
-      summary: 'Created iCost, Intel’s global financial cost analysis project which valuated the cost of all global wafer lots dependent on their process step, for accurate end-of-month analysis. Enhanced InterfaceEngine’s web service, data pull, maintenance tool, and monitor tool; applications working in unison for ETL of financial cost analysis data. Utilized SSIS, implemented ETL stored procedures, configured a job automation scheduler, handled data from web services, atom feed, MARS, xml and text.',
+      desc: 'Implemented iCost, Intel’s global financial cost analysis project.',
       skills: 'Asp.net3.5, WCF, Sql Server2008, SSIS'
    },
    {
@@ -78,8 +76,7 @@ var jobs = [
       link: 'https://www.nwea.org/',
       city: 'Portland, OR',
       dates: 'Apr 2008 - May 2009 (1yr 2mo)',
-      desc: '2 TB database reduction application, for dev/qa use.',
-      summary: 'Implemented an internal-facing 2TB Sql Server data set reduction website for QA/Dev. Used SQL Server Management Objects (SMO) to copy production database schemas from multiple SQL Server instances to a standard set of SQL Server instances. Used Ado.net’s SqlBulkCopy class for data extraction based on  dynamically generated SQL select statements using data and SQL Server metadata to determine table joins. Transferred SQL Agent jobs and SSIS packages via SQL Server Integration Service (SSIS) runtime API. Used Red Gate’s SQL Compare and SQL Data Compare for verification.',
+      desc: 'Implemented a 2 TB database reduction application for qa/dev testing.',
       skills: 'Asp.net3.5, SMO, SSIS, Sql Server2005'
    },
    {
@@ -87,8 +84,7 @@ var jobs = [
       link: 'https://www.webmd.com/',
       city: 'Portland, OR',
       dates: 'Oct 2007 - Mar 2008 (6mo)',
-      desc: 'Enhanced multi-corp portal for new benefits package.',
-      summary: 'Implemented a new feature to the Benefits multi-browser website which allows users to customize and compare their medical/dental/vision insurance benefit packages. Worked as part of a Scrum team meeting daily, releasing weekly, and prioritizing milestones and tasks. Implemented the Model View Presenter design pattern. Wrapped all code in unit tests using NUnit and RhinoMocks. Worked with numerous design patterns including. Factories, Builder, Composite, Mediator, Prototype, Decorator, Strategy, Visitor.',
+      desc: 'Enhanced a multi-corp medical benefits customization portal.',
       skills: 'Asp.net3.5, MVP, Sql Server2005, multi-browser, Scrum'
    },
    {
@@ -96,8 +92,7 @@ var jobs = [
       link: 'http://www.corvel.com/',
       city: 'Portland, OR',
       dates: 'Jun 2006 - Sep 2007 (1yr 4mo)',
-      desc: 'Internal business applications, MIIS server management.',
-      summary: 'Designed and implemented intranet applications to support internal business needs. Worked closely with internal customers to make sure moving requirements were met during the design and development stages to maximize product applicability. Implemented an Active Directory self-service application utilizing Directory Services, Kerberos multi-hop constrained delegation for security, and weekly Sql Agent jobs using Sql Database Mail for notification of non-compliance, monitored with MOM. Worked with Windows Workflow Foundation (WWF). Implemented and maintained the Microsoft Identity Integration Server.',
+      desc: 'Implemented internal intranet applications to support business needs.',
       skills: 'Asp.net3, Sql Server2005, WWF, Active Directory, MOM, MIIS'
    },
    {
@@ -105,8 +100,7 @@ var jobs = [
       link: 'https://www.ciber.com/',
       city: 'Vancouver, WA',
       dates: 'Nov 2004 - May 2006 (1yr 7mo)',
-      desc: 'Enhanced 9 public facing state labor statistic sites.',
-      summary: 'Enhanced 9 public facing state labor market information websites, managed off site hosting as well as an offshore team in India. Dealt directly with state customers, and met with the consortium in out-of-state seminars. Designed advanced searching functionality to crawl the website’s database and hard drive file content, displaying the ranked results. Ported a website from Sql Server to Oracle using Erwin to reverse engineer the database.',
+      desc: 'Enhanced a public-facing multi-state labor market information website.',
       skills: 'Asp.net2, Sql Server2000, Erwin, Full-text indexing, Index Services'
    },
    {
@@ -114,8 +108,7 @@ var jobs = [
       link: 'http://www.intel.com',
       city: 'Portland, OR',
       dates: 'Apr 2003 - Jun 2004 (1yr 3mo)',
-      desc: 'Enhanced public facing "Teach to the Future" website.',
-      summary: 'Converted and enhanced Intel’s “Teach to the Future” multi-browser extranet website. Converted from VBScript/ASP/SQL Server to a C#/ASP.NET. Added new Seminars functionality. Refactored code and database eliminating 120 ASP files and over 200 stored procedures. Reviewed all www.asp.net starter kits and other ASP.NET solutions to create an application environment that minimized code redundancy while maximizing reusability. Designed custom server controls to enable client side JavaScript validation.',
+      desc: 'Enhanced Intel’s “Teach to the Future” extranet website.',
       skills: 'Asp.net1, SqlServer2000, multi-browser'
    }
 ]
