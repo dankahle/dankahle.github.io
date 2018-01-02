@@ -15,7 +15,7 @@ var skills = [
    },
    {
       title: 'node 6.9.2',
-      desc: 'Node, Express, Lodash, Mocha/Chai'
+      desc: 'Node, NPM, Express, Lodash, Mocha/Chai'
    },
    {
       title: 'mongoDB 3.2',
@@ -23,7 +23,7 @@ var skills = [
    },
    {
       title: 'tools',
-      desc: 'Macbook pro, WebStorm, NPM/Bower, Gulp/Grunt, Git, Github, Stash/Bitbucket, Jira, Scrum'
+      desc: 'Macbook pro, WebStorm, Chrome, Gulp/Grunt, Github, Bitbucket, Jira, Scrum'
    },
    {
       title: 'patterns',
@@ -37,11 +37,11 @@ var jobs = [
       link: 'https://www.acxiom.com/',
       city: 'Austin, TX',
       dates: 'Oct 2015 - Oct 2017 (2yr)',
-		desc: 'Implemented acxiom’s next generation of data gathering/parsing/etl tools using the MEAN stack.',
+		desc: 'Implemented acxiom’s next-generation data gathering/parsing/etl tools using the MEAN stack.',
       skills: 'angular 1.5/4, es5/6, typescript, jquery, rxjs, less/scss, bootstrap/material, ui-bootstrap, kraken, cg-angular, karma, jasmine, node 6.9.2, express, mongoose, mongodb 3.2, grunt, git, stash/bitbucket, jenkins, jira, scrum'
 	},
    {
-      title: 'Technology Change',
+      title: 'Technology Change - ASP.NET to MEAN stack',
       city: 'San Diego, CA',
       dates: 'Sep 2013 - Jun 2015 (1yr 9mo)',
       desc: 'Took time off to learn new technologies, moved from .NET web apps to the MEAN stack.',
