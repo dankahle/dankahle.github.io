@@ -11,7 +11,7 @@ var skills = [
    },
    {
       title: 'angular 5',
-      desc: 'Material, @angular/cli, @angular/flex-layout, Rxjs, Karma/Jasmine'
+      desc: 'Material, @angular/cli, @angular/flex-layout, Rxjs, redux, Karma/Jasmine'
    },
    {
       title: 'node 6.9.2',
@@ -38,7 +38,7 @@ var jobs = [
       city: 'Austin, TX',
       dates: 'Oct 2015 - Oct 2017 (2yr)',
 		desc: 'Implemented acxiom’s next-generation data gathering/parsing/etl tools using the MEAN stack.',
-      skills: 'angular 1.5/4, es5/6, typescript, jquery, rxjs, less/scss, bootstrap/material, ui-bootstrap, kraken, cg-angular, karma, jasmine, node 6.9.2, express, mongoose, mongodb 3.2, grunt, git, stash/bitbucket, jenkins, jira, scrum'
+      skills: 'angular 1.5, angular4/redux, es5/6, typescript, jquery, rxjs, less/scss, bootstrap/material, ui-bootstrap, kraken, cg-angular, karma, jasmine, node 6.9.2, express, mongoose, mongodb 3.2, grunt, git, stash/bitbucket, jenkins, jira, scrum'
 	},
    {
       title: 'Technology Change - ASP.NET to MEAN stack',
