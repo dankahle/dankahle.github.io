@@ -38,14 +38,14 @@ var jobs = [
       city: 'Austin, TX',
       dates: 'Oct 2015 - Oct 2017 (2yr)',
 		desc: 'Implemented acxiom’s next-generation data gathering/parsing/etl tools using the MEAN stack.',
-      skills: 'angular 1.5, angular4/redux, es5/6, typescript, jquery, rxjs, less/scss, bootstrap/material, ui-bootstrap, kraken, cg-angular, karma, jasmine, node 6.9.2, express, mongoose, mongodb 3.2, grunt, git, stash/bitbucket, jenkins, jira, scrum'
+      skills: 'mean stack: angular4/node6/mongodb3.2, es5/6, typescript, jquery, rxjs, less/scss, bootstrap/material, ui-bootstrap, kraken, cg-angular, karma, jasmine, express, mongoose, grunt, git, stash/bitbucket, jenkins, jira, scrum'
 	},
    {
       title: 'Technology Change - ASP.NET to MEAN stack',
       city: 'San Diego, CA',
       dates: 'Sep 2013 - Jun 2015 (1yr 9mo)',
       desc: 'Took time off to learn new technologies, moved from .NET web apps to the MEAN stack.',
-      skills: 'angular, jquery, ui-router, restangular, polymer, sass/less, lodash, async, node, express, mongoose, mongodb, karma/jasmine, mocha/chai/sinon, webstorm, npm/bower, gulp/grunt, git/github, balsamiq, aws, heroku, mongolab'
+      skills: 'mean stack: angular/node/mongodb, jquery, ui-router, restangular, polymer, sass/less, lodash, async, express, mongoose, karma/jasmine, mocha/chai/sinon, webstorm, npm/bower, gulp/grunt, git/github, balsamiq, aws, heroku, mongolab'
    },
    {
       title: 'LPL Financial',
