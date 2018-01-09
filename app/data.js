@@ -32,14 +32,22 @@ var skills = [
 ];
 
 var jobs = [
-	{
-		title: 'acxiom',
+   {
+      title: 'dk-contacts',
+      link: 'https://github.com/dankahle/dk-contacts',
+      city: 'github repo',
+      dates: 'Nov 2017 - Dec 2017 (2mo)',
+      desc: 'Duplicated Google Contacts using angular5/node8/mongodb3.4, as a showcase project for interviewing.',
+      skills: 'mean stack: angular5/node8/mongodb3.4, es6, typescript, rxjs, scss, material, @angular/flex-layout, @angular/cli, json schema, redoc, mlab, heroku, github pages, karma, jasmine, mocha, chai'
+   },
+   {
+      title: 'acxiom',
       link: 'https://www.acxiom.com/',
       city: 'Austin, TX',
       dates: 'Oct 2015 - Oct 2017 (2yr)',
-		desc: 'Implemented acxiom’s next-generation data gathering/parsing/etl tools using the MEAN stack.',
+      desc: 'Implemented acxiom’s next-generation data gathering/parsing/etl tools using the MEAN stack.',
       skills: 'mean stack: angular4/node6/mongodb3.2, es5/6, typescript, jquery, rxjs, less/scss, bootstrap/material, ui-bootstrap, kraken, cg-angular, karma, jasmine, express, mongoose, grunt, git, stash/bitbucket, jenkins, jira, scrum'
-	},
+   },
    {
       title: 'Technology Change - ASP.NET to MEAN stack',
       city: 'San Diego, CA',
@@ -117,7 +125,7 @@ var repos = [
    {
       title: 'dk-contacts',
       url: 'https://github.com/dankahle/dk-contacts',
-      desc: 'This project is a duplication of Google\'s "Contacts" site as an exercise in using the latest mean stack technologies: angular 5, node 8.9, mongo 3.4. It\'s comprised of 3 repos (below): a common node project, backend rest api (node/express/mongodb), and frontend UI (angular 5/material/flex-layout).'
+      desc: 'This project is a duplication of Google Contacts as an exercise in using the latest mean stack technologies: angular 5, node 8.9, mongo 3.4. It\'s comprised of 3 repos (below): a common node project, backend rest api (node/express/mongodb), and frontend UI (angular 5/material/flex-layout).'
    },
    {
       title: 'contacts-fe',
