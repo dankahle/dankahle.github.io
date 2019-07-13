@@ -6,6 +6,10 @@ var skills = [
       desc: 'TypeScript, ES6, HTML5, SCSS, Material, Bootstrap,  Lodash'
    },
    {
+      title: 'angular 1.5',
+      desc: 'UI-Router, UI-Bootstrap, Bootstrap, cg-angular, Karma/Jasmine'
+   },
+   {
       title: 'angular 7',
       desc: 'Material, @angular/cli, @angular/flex-layout, Rxjs, redux, Karma/Jasmine'
    },
