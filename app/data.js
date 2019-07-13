@@ -37,7 +37,7 @@ var jobs = [
       link: 'https://www.cisco.com/',
       city: 'San Jose, CA',
       dates: 'Mar 2018 - Present (1.4 yr)',
-      desc: 'Implemented acxiom’s next-generation data gathering/parsing/etl tools using the MEAN stack.',
+      desc: 'Architected and implemented Digitized Finance Allocation\'s mean stack metadata application.',
       skills: 'mean stack: angular7/node8/mongodb3.6, typescript, scss, inversify(IoC on back), cisco/material, @angular/flex-layout, @angular/cli, jasmine/supertest/karma/protractor, express, mongoose, git, bitbucket, jenkins, rally, scrum'
    },
    {
