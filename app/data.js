@@ -18,7 +18,7 @@ var skills = [
       desc: 'Node, NPM, Express, Lodash, Mocha/Chai'
    },
    {
-      title: 'mongoDB 3.6.4',
+      title: 'mongodb 3.6.4',
       desc: 'MongoDB, MongoDB node native driver, Mongoose'
    },
    {
