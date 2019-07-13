@@ -33,7 +33,7 @@ var skills = [
 
 var jobs = [
    {
-      title: 'cisco',
+      title: 'Cisco',
       link: 'https://www.cisco.com/',
       city: 'San Jose, CA',
       dates: 'Mar 2018 - Present (1.4 yr)',
@@ -49,7 +49,7 @@ var jobs = [
       skills: 'mean stack: angular5/node8/mongodb3.4, es6, typescript, rxjs, scss, material, @angular/flex-layout, @angular/cli, json schema, redoc, mlab, heroku, github pages, karma, jasmine, mocha, chai'
    },
    {
-      title: 'acxiom',
+      title: 'Acxiom',
       link: 'https://www.acxiom.com/',
       city: 'Austin, TX',
       dates: 'Oct 2015 - Oct 2017 (2 yr)',
