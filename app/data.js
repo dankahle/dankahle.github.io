@@ -6,24 +6,20 @@ var skills = [
       desc: 'TypeScript, ES6, HTML5, SCSS, Material, Bootstrap,  Lodash'
    },
    {
-      title: 'angular 1.5',
-      desc: 'UI-Router, UI-Bootstrap, Bootstrap, cg-angular, Karma/Jasmine'
-   },
-   {
-      title: 'angular 5',
+      title: 'angular 7',
       desc: 'Material, @angular/cli, @angular/flex-layout, Rxjs, redux, Karma/Jasmine'
    },
    {
-      title: 'node 6.9.2',
+      title: 'node 8.11.2',
       desc: 'Node, NPM, Express, Lodash, Mocha/Chai'
    },
    {
-      title: 'mongoDB 3.2',
+      title: 'mongoDB 3.6.4',
       desc: 'MongoDB, MongoDB node native driver, Mongoose'
    },
    {
       title: 'tools',
-      desc: 'Macbook pro, WebStorm, Chrome, Gulp/Grunt, Github, Bitbucket, Jira, Scrum'
+      desc: 'Macbook, Windows, WebStorm, Chrome, Gulp/Grunt, Github, Bitbucket, Jira/Rally, Scrum'
    },
    {
       title: 'patterns',
@@ -32,6 +28,14 @@ var skills = [
 ];
 
 var jobs = [
+   {
+      title: 'cisco',
+      link: 'https://www.cisco.com/',
+      city: 'San Jose, CA',
+      dates: 'Mar 2018 - Present (1.4 yr)',
+      desc: 'Implemented acxiom’s next-generation data gathering/parsing/etl tools using the MEAN stack.',
+      skills: 'mean stack: angular4/node6/mongodb3.2, es5/6, typescript, jquery, rxjs, less/scss, bootstrap/material, ui-bootstrap, kraken, cg-angular, karma, jasmine, express, mongoose, grunt, git, stash/bitbucket, jenkins, jira, scrum'
+   },
    {
       title: 'dk-contacts',
       link: 'https://github.com/dankahle/dk-contacts',
@@ -51,7 +55,7 @@ var jobs = [
    {
       title: 'Technology Change - ASP.NET to MEAN stack',
       city: 'San Diego, CA',
-      dates: 'Sep 2013 - Jun 2015 (1yr 9mo)',
+      dates: 'Sep 2013 - Jun 2015 (1.7 yr)',
       desc: 'Took time off to learn new technologies, moved from .NET web apps to the MEAN stack.',
       skills: 'mean stack: angular/node/mongodb, jquery, ui-router, restangular, polymer, sass/less, lodash, async, express, mongoose, karma/jasmine, mocha/chai/sinon, webstorm, npm/bower, gulp/grunt, git/github, balsamiq, aws, heroku, mongolab'
    },
@@ -59,7 +63,7 @@ var jobs = [
       title: 'LPL Financial',
       link: 'https://lplfinancial.lpl.com',
       city: 'San Diego, CA',
-      dates: 'Dec 2011 - Sep 2013 (1yr 10mo)',
+      dates: 'Dec 2011 - Sep 2013 (1.9 yr)',
       desc: 'Enhanced LPL’s BranchNet, a public-facing financial advisor website.',
       skills: 'Asp.net MVC3, Asp.net4, jQuery,  WCF, Sql Server2008'
    },
@@ -83,7 +87,7 @@ var jobs = [
       title: 'NWEA',
       link: 'https://www.nwea.org/',
       city: 'Portland, OR',
-      dates: 'Apr 2008 - May 2009 (1yr 2mo)',
+      dates: 'Apr 2008 - May 2009 (1.2 yr)',
       desc: 'Implemented a 2 TB database reduction application for qa/dev testing.',
       skills: 'Asp.net3.5, SMO, SSIS, Sql Server2005'
    },
@@ -99,7 +103,7 @@ var jobs = [
       title: 'Corvel',
       link: 'http://www.corvel.com/',
       city: 'Portland, OR',
-      dates: 'Jun 2006 - Sep 2007 (1yr 4mo)',
+      dates: 'Jun 2006 - Sep 2007 (1.3 yr)',
       desc: 'Implemented internal intranet applications to support business needs.',
       skills: 'Asp.net3, Sql Server2005, WWF, Active Directory, MOM, MIIS'
    },
@@ -107,7 +111,7 @@ var jobs = [
       title: 'Ciber',
       link: 'https://www.ciber.com/',
       city: 'Vancouver, WA',
-      dates: 'Nov 2004 - May 2006 (1yr 7mo)',
+      dates: 'Nov 2004 - May 2006 (1.6 yr)',
       desc: 'Enhanced a public-facing multi-state labor market information website.',
       skills: 'Asp.net2, Sql Server2000, Erwin, Full-text indexing, Index Services'
    },
@@ -115,7 +119,7 @@ var jobs = [
       title: 'Intel',
       link: 'http://www.intel.com',
       city: 'Portland, OR',
-      dates: 'Apr 2003 - Jun 2004 (1yr 3mo)',
+      dates: 'Apr 2003 - Jun 2004 (1.3 yr)',
       desc: 'Enhanced Intel’s “Teach to the Future” extranet website.',
       skills: 'Asp.net1, SqlServer2000, multi-browser'
    }
@@ -141,11 +145,6 @@ var repos = [
       title: 'node-base',
       url: 'https://github.com/dankahle/node-base',
       desc: 'A node common project for reusable node code across all node projects. This pattern affords consistency between your node projects and your frontends as well, as the standard error messages and codes support reusable UI error handling.'
-   },
-   {
-      title: 'redux2',
-      url: 'https://github.com/dankahle/redux2',
-      desc: 'A comparison between straight angular 4 and angular 4 on redux. My first foray into redux was an uncomfortable experience. Redux is orthogonal to angular in many respects. It was hard to discern what enterprise angular would look like as opposed to angular/redux (my first enterprise angular 4 app). This was an attempt to see the two side-by-side and how redux could be done better.'
    },
    {
       title: 'dk-modal',
