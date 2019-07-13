@@ -38,7 +38,7 @@ var jobs = [
       city: 'San Jose, CA',
       dates: 'Mar 2018 - Present (1.4 yr)',
       desc: 'Implemented acxiom’s next-generation data gathering/parsing/etl tools using the MEAN stack.',
-      skills: 'mean stack: angular4/node6/mongodb3.2, es5/6, typescript, jquery, rxjs, less/scss, bootstrap/material, ui-bootstrap, kraken, cg-angular, karma, jasmine, express, mongoose, grunt, git, stash/bitbucket, jenkins, jira, scrum'
+      skills: 'mean stack: angular7/node8/mongodb3.6, typescript, scss, inversify(IoC on back), cisco/material, @angular/flex-layout, @angular/cli, jasmine/supertest/karma/protractor, express, mongoose, git, bitbucket, jenkins, rally, scrum'
    },
    {
       title: 'dk-contacts',
