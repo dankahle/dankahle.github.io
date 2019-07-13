@@ -40,7 +40,7 @@ var jobs = [
       title: 'dk-contacts',
       link: 'https://github.com/dankahle/dk-contacts',
       city: 'github repo',
-      dates: 'Nov 2017 - Dec 2017 (2mo)',
+      dates: 'Nov 2017 - Dec 2017 (2 mo)',
       desc: 'Duplicated Google Contacts using angular5/node8/mongodb3.4, as a showcase project for interviewing.',
       skills: 'mean stack: angular5/node8/mongodb3.4, es6, typescript, rxjs, scss, material, @angular/flex-layout, @angular/cli, json schema, redoc, mlab, heroku, github pages, karma, jasmine, mocha, chai'
    },
@@ -48,7 +48,7 @@ var jobs = [
       title: 'acxiom',
       link: 'https://www.acxiom.com/',
       city: 'Austin, TX',
-      dates: 'Oct 2015 - Oct 2017 (2yr)',
+      dates: 'Oct 2015 - Oct 2017 (2 yr)',
       desc: 'Implemented acxiom’s next-generation data gathering/parsing/etl tools using the MEAN stack.',
       skills: 'mean stack: angular4/node6/mongodb3.2, es5/6, typescript, jquery, rxjs, less/scss, bootstrap/material, ui-bootstrap, kraken, cg-angular, karma, jasmine, express, mongoose, grunt, git, stash/bitbucket, jenkins, jira, scrum'
    },
@@ -71,7 +71,7 @@ var jobs = [
       title: 'Learning.com',
       link: 'http://www.learning.com',
       city: 'Portland, OR',
-      dates: 'Dec 2010 - Jun 2011 (7mo)',
+      dates: 'Dec 2010 - Jun 2011 (7 mo)',
       desc: 'Enhanced learning.com\'s K through 12 educational webite.',
       skills: 'Asp.net4, jQuery, WCF, Entity Framework, Sql Server2008, multi-browser, Scrum'
    },
@@ -79,7 +79,7 @@ var jobs = [
       title: 'Intel',
       link: 'http://www.intel.com',
       city: 'Portland, OR',
-      dates: 'Jan 2010 - Nov 2010 (11mo)',
+      dates: 'Jan 2010 - Nov 2010 (11 mo)',
       desc: 'Implemented iCost, Intel’s global financial cost analysis project.',
       skills: 'Asp.net3.5, WCF, Sql Server2008, SSIS'
    },
@@ -95,7 +95,7 @@ var jobs = [
       title: 'WebMD',
       link: 'https://www.webmd.com/',
       city: 'Portland, OR',
-      dates: 'Oct 2007 - Mar 2008 (6mo)',
+      dates: 'Oct 2007 - Mar 2008 (6 mo)',
       desc: 'Enhanced a multi-corp medical benefits customization portal.',
       skills: 'Asp.net3.5, MVP, Sql Server2005, multi-browser, Scrum'
    },
