@@ -44,7 +44,7 @@ var jobs = [
       title: 'dk-contacts',
       link: 'https://github.com/dankahle/dk-contacts',
       city: 'github repo',
-      dates: 'Nov 2017 - Dec 2017 (2 mo)',
+      dates: 'Nov 2017 - Mar 2018 (5 mo)',
       desc: 'Duplicated Google Contacts using angular5/node8/mongodb3.4, as a showcase project for interviewing.',
       skills: 'mean stack: angular5/node8/mongodb3.4, es6, typescript, rxjs, scss, material, @angular/flex-layout, @angular/cli, json schema, redoc, mlab, heroku, github pages, karma, jasmine, mocha, chai'
    },
