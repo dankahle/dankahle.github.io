@@ -11,11 +11,11 @@ var skills = [
    },
    {
       title: 'angular 7',
-      desc: 'Material, @angular/cli, @angular/flex-layout, Rxjs, redux, Karma/Jasmine'
+      desc: 'Material/@ng-bootstrap, @angular/cli, @angular/flex-layout, Rxjs, redux, Karma/Jasmine/Protractor'
    },
    {
       title: 'node 8.11.2',
-      desc: 'Node, NPM, Express, Lodash, Mocha/Chai'
+      desc: 'Node, NPM, Express, Lodash, Jasmine'
    },
    {
       title: 'mongodb 3.6.4',
