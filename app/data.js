@@ -15,7 +15,7 @@ var skills = [
    },
    {
       title: 'node 8.11.2',
-      desc: 'Node, NPM, Express, Lodash, Jasmine'
+      desc: 'Node, NPM, express, pm2, redoc, json schema, tv4, splunk/kibana, lodash, q, Jasmine'
    },
    {
       title: 'mongodb 3.6.4',
@@ -23,7 +23,7 @@ var skills = [
    },
    {
       title: 'tools',
-      desc: 'Macbook, Windows, WebStorm, Chrome, Gulp/Grunt, Github, Bitbucket, Jira/Rally, Scrum'
+      desc: 'Macbook/Windows/linux, WebStorm, Chrome, Gulp/Grunt, Github, Bitbucket, Jira/Rally, Scrum'
    },
    {
       title: 'patterns',
